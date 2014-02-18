@@ -3,7 +3,7 @@ extends layout/layout
 block content
   header.row
     div
-      span#text-logo ethereum
+      span.text-logo ethereum
     nav.pull-right.text-right(role='navigation')
       ul.nav.navbar-nav
         li
@@ -52,5 +52,32 @@ block content
               
   div.container
     div.row
-      div.col-md-12
-        p This is test content!
+      div.person-card
+        div.person-photo
+        dl
+          dt.person-name Mihai Alisie
+          dd.person-title Founder
+        p.person-description Lorem ipsum or convenience, you can also connect routes directly to views or external URLs.
+        ul.list-inline
+          li
+            a(href='https://www.facebook.com/ethereumproject')
+              i.fa.fa-facebook.fa-fw
+          li
+            a(href='https://www.twitter.com/ethereumproject')
+              i.fa.fa-twitter.fa-fw
+          li
+            a(href='https://plus.google.com/+EthereumOrgOfficial/posts')
+              i.fa.fa-google-plus.fa-fw
+          li
+            i.fa.fa-linkedin.fa-fw
+          li
+            i.fa.fa-vimeo-square.fa-fw
+          li
+            i.fa.fa-skype.fa-fw
+          li
+            a(href='https://www.youtube.com/user/ethereumproject')
+              i.fa.fa-youtube-play.fa-fw
+          li
+            a(href='mailto:info@ethereum.org')
+              i.fa.fa-envelope.fa-fw
+
