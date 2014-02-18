@@ -41,6 +41,22 @@ margin:10px;
 text-align:center;
 }
 
+.active {
+background-color:#91a0f1;
+color:#fff;
+}
+
+.person-photo {
+
+}
+
 .list-inline > li:first-child {
 padding-left:15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 50%;
+    border-radius:50%;
 }
