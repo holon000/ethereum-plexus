@@ -36,6 +36,8 @@ a {
 
 .logo-text h1 {
   letter-spacing: 0.3ex;
+  color:#787878;
+  font-family:RobotoRegular;
 }
 
 .navbar-nav {
@@ -88,4 +90,5 @@ a {
   text-align:center;
   max-width:900px;
   margin:0 auto;
+  padding-top:30px;
 }
