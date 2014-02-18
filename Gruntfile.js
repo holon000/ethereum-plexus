@@ -32,6 +32,7 @@ module.exports = function (grunt) {
     'linker/styles/bootstrap.min.css',
     'linker/styles/bootstrap-theme.min.css',
     'linker/styles/font-awesome.min.css',
+    'linker/styles/roboto.css',
     'linker/**/*.css'
   ];
 
