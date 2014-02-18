@@ -65,4 +65,5 @@ img {
     height: auto;
     max-width: 50%;
     border-radius:50%;
+    border:3px solid white;
 }
