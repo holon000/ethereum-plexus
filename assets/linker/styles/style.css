@@ -36,7 +36,11 @@ border-bottom: 1px solid #a0aef0;
 
 .person-card {
 width:22%;
-padding:15px important!;
+padding:15px;
 margin:10px;
 text-align:center;
+}
+
+.list-inline > li:first-child {
+padding-left:15px;
 }
