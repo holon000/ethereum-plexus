@@ -21,6 +21,7 @@ cd ~
 git clone git@github.com:holon000/ethereum-plexus.git
 cd ethereum-plexus
 git submodule init
+sudo gem install sass
 sudo npm install -d
 sails lift
 ```
