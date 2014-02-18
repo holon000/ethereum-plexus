@@ -36,7 +36,7 @@ border-bottom: 1px solid #a0aef0;
 
 .person-card {
 width:22%;
-padding:15px;
+padding:15px important!;
 margin:10px;
 text-align:center;
 }
