@@ -1,7 +1,7 @@
 extends layout/layout
 
 block content
-  header.row
+  header.container
     div
       span.text-logo ethereum
     nav.pull-right.text-right(role='navigation')
@@ -25,8 +25,8 @@ block content
 
   div.jumbotron.text-center
     iframe(width='560', height='315', src='//www.youtube.com/embed/q5FDvzj8YX4?wmode=opaque', frameborder='0', allowfullscreen='')
-  div.row.social.text-muted
-    div.col-md-12
+  div.social.text-muted
+    div.container
       ul.list-inline
         li
           a(href='https://www.facebook.com/ethereumproject')
