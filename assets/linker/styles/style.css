@@ -4,7 +4,6 @@ body {
 }
 
 header {
-  padding-top: 10px;
 }
 /*.container {
 padding-top:10px;
@@ -27,13 +26,16 @@ color: #333;
   float: left;
   display: inline-block;
   letter-spacing: 0.3ex;
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 .navbar-nav {
   color: #333;
   text-transform:uppercase;
 }
+.navbar-nav > li > a {
+  padding-bottom: 20px;
+  padding-top: 20px;
 
 .social {
 border-top: 1px solid #a0aef0;
