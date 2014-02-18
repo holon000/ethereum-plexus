@@ -90,9 +90,8 @@ h2 {
   text-align: center;
 }
 
-/*#what, #how, #why, #who, #join {
-  text-align:center;
+div.content > div {
   max-width:900px;
   margin:0 auto;
   padding-top:30px;
-}*/
+}
