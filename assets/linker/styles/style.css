@@ -17,14 +17,22 @@ body {
 }
 
 a {
-color: #333;
+  color: #333;
 }
 
 .logo-text {
   float: left;
   display: inline-block;
+margin-top: -10px;
+}
+
+.logo-text > a:hover, .logo-text > a:link {
+  color: #333;
+  text-decoration: none;
+}
+
+.logo-text h1 {
   letter-spacing: 0.3ex;
-  margin-top: 10px;
 }
 
 .navbar-nav {
@@ -38,36 +46,36 @@ color: #333;
 }
 
 .social {
-border-top: 1px solid #a0aef0;
-border-bottom: 1px solid #a0aef0;
-padding-top:10px;
+  border-top: 1px solid #a0aef0;
+  border-bottom: 1px solid #a0aef0;
+  padding-top:10px;
 }
 
 .person-card {
-width:22%;
-padding:15px;
-margin:10px;
-text-align:center;
+  width:22%;
+  padding:15px;
+  margin:10px;
+  text-align:center;
 }
 
 .person-name {
-margin-top:10px;
+  margin-top:10px;
 }
 
 
 .active {
-background-color:#91a0f1;
-color:#fff !important;
+  background-color:#91a0f1;
+  color:#fff !important;
 }
 
 .list-inline > li:first-child {
-padding-left:15px;
+  padding-left:15px;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    max-width: 50%;
-    border-radius:50%;
-    border:3px solid white;
+  width: 100%;
+  height: auto;
+  max-width: 50%;
+  border-radius:50%;
+  border:3px solid white;
 }
