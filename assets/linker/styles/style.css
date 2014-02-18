@@ -3,12 +3,17 @@ body {
   font-family:RobotoLight;
 }
 
+.container {
+padding-top:10px;
+}
+
 .jumbotron {
   background: rgba(255, 255, 255, 0.9) url('/images/jumbotron-background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin:0;
 }
 
 a {
@@ -16,11 +21,10 @@ color: #333;
 }
 
 .logo-text {
-  margin-left:20px;
+  
 }
 
 .navbar-nav {
-  margin-right:20px;
   color: #333;
   text-transform:uppercase;
 }
@@ -28,4 +32,11 @@ color: #333;
 .social {
 border-top: 1px solid #a0aef0;
 border-bottom: 1px solid #a0aef0;
+}
+
+.person-card {
+width:22%;
+padding:15px;
+margin:10px;
+text-align:center;
 }
