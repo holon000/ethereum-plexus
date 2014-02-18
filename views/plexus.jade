@@ -1,9 +1,10 @@
 extends layout/layout
 
 block content
-  header
-    div#logo
-    nav(role='navigation')
+  header.row
+    div
+      span#text-logo ethereum
+    nav.pull-right.text-right(role='navigation')
       ul.nav.navbar-nav
         li
           a(href='#what') What
@@ -22,32 +23,32 @@ block content
         li
           a(href='http://forum.ethereum.org') Forum
 
-  div.jumbotron
+  div.jumbotron.text-center
     iframe(width='560', height='315', src='//www.youtube.com/embed/q5FDvzj8YX4?wmode=opaque', frameborder='0', allowfullscreen='')
-  div.row.social
+  div.row.social.text-muted
     div.col-md-12
       ul.list-inline
         li
           a(href='https://www.facebook.com/ethereumproject')
-            i.fa.fa-facebook
+            i.fa.fa-facebook.fa-fw
         li
           a(href='https://www.twitter.com/ethereumproject')
-            i.fa.fa-twitter
+            i.fa.fa-twitter.fa-fw
         li
           a(href='https://plus.google.com/+EthereumOrgOfficial/posts')
-            i.fa.fa-google-plus
+            i.fa.fa-google-plus.fa-fw
         li
-          i.fa.fa-linkedin
+          i.fa.fa-linkedin.fa-fw
         li
-          i.fa.fa-vimeo-square
+          i.fa.fa-vimeo-square.fa-fw
         li
-          i.fa.fa-skype
+          i.fa.fa-skype.fa-fw
         li
           a(href='https://www.youtube.com/user/ethereumproject')
-            i.fa.fa-youtube-play
+            i.fa.fa-youtube-play.fa-fw
         li
           a(href='mailto:info@ethereum.org')
-            i.fa.fa-envelope
+            i.fa.fa-envelope.fa-fw
               
   div.container
     div.row
