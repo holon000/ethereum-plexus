@@ -3,10 +3,13 @@ body {
   font-family:RobotoLight;
 }
 
-.container {
+header {
+  padding-top: 10px;
+}
+/*.container {
 padding-top:10px;
 }
-
+*/
 .jumbotron {
   background: rgba(255, 255, 255, 0.9) url('/images/jumbotron-background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -21,7 +24,10 @@ color: #333;
 }
 
 .logo-text {
-  
+  float: left;
+  display: inline-block;
+  letter-spacing: 0.3ex;
+  margin-top: auto;
 }
 
 .navbar-nav {
