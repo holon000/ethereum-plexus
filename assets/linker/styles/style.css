@@ -42,7 +42,7 @@ a {
 
 .navbar-nav {
   color: #333;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 .navbar-nav > li > a {
@@ -85,6 +85,9 @@ a {
   border-radius:50%;
   border:3px solid white;
 }
+h1, h2, h3, h4, h5, h6 {
+  text-transform:lowercase;
+}
 
 h2 {
   text-align: center;
@@ -94,4 +97,21 @@ div.content > div {
   max-width:900px;
   margin:0 auto;
   padding-top:30px;
+}
+
+#mc-embedded-subscribe {
+padding:8px 10px;
+border-radius:0;
+margin-bottom:10px;
+background-color:#91A0F1;
+border:1px solid #91A0F1;
+color:white;
+}
+
+#mce-EMAIL {
+padding:8px 10px;
+border-radius:0;
+margin-bottom:10px;
+border:1px solid #91A0F1;
+margin-right:5px;
 }
