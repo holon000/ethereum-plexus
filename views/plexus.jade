@@ -3,10 +3,12 @@ extends layout/layout
 block content
   header.container
     div.logo-text
-      a(href='#')
+      a(href='/')
         h1 ethereum
     nav.pull-right.text-right(role='navigation')
       ul.nav.navbar-nav
+        li
+          a(href='#news') News
         li
           a(href='#what') What
         li
@@ -18,7 +20,7 @@ block content
         li
           a(href='#join') Join
         li
-          a(href='http://wiki.ethereum.org') Wiki
+          a(href='https://wiki.ethereum.org') Wiki
         li
           a(href='http://blog.ethereum.org') Blog
         li
@@ -55,21 +57,22 @@ block content
             i.fa.fa-envelope.fa-fw
               
   div.content
-    div#news.text-center
-      include includes/news
       
+    div#news.container.text-center
+      include includes/news
+
     div#what.container
       include includes/what
+
+    div#why.container
+      include includes/why
+
+    div#how.container
+      include includes/how
 
     div#who.container.text-center
       include includes/who
 
-    div#why.container
-      include includes/why
-        
-    div#how.container
-      include includes/how
-        
-    div#join.container
+    div#join.container.text-center
       include includes/join
 
