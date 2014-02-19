@@ -58,7 +58,6 @@ a {
 }
 
 .person-card {
-  width: 22%;
   padding: 15px;
   margin: 10px;
   text-align: center;
@@ -78,6 +77,9 @@ a {
   padding-left: 15px;
 }
 
+.person-card {
+  width: 150px;
+}
 .person-card img {
   width: 100%;
   height: auto;
