@@ -87,6 +87,7 @@ a {
   border-radius:50%;
   border:3px solid white;
 }
+
 h1, h2, h3, h4, h5, h6 {
   text-transform:lowercase;
 }
@@ -116,4 +117,8 @@ border-radius:0;
 margin-bottom:10px;
 border:1px solid #91A0F1;
 margin-right:5px;
+}
+
+.alert-info {
+  /* TODO override default bootstrap style here */
 }
