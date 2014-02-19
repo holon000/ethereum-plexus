@@ -12,19 +12,19 @@ h2 {
   text-align: center;
 }
 
-div.content > div {
+#maincontent > div {
   max-width:900px;
   margin:0 auto;
   padding-top:30px;
 }
 
+#maincontent {
+  background: #f5f5f5
+}
+
 a {
   color: #333;
   text-decoration: underline;
-}
-
-.content {
-  background: #f5f5f5
 }
 
 .jumbotron {
@@ -81,7 +81,6 @@ a {
 .person-name {
   margin-top: 10px;
 }
-
 
 .active {
   background-color: #91a0f1;
