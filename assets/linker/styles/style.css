@@ -93,8 +93,9 @@ a {
 .contact-card {
   text-align: center;
   width: 150px;
-  height: 250px;
-  border: 1px solid red;
+  margin:5px;
+  height:20em;
+  float:left;
 }
 
 .contact-card .active {
