@@ -12,6 +12,11 @@ h2 {
   text-align: center;
 }
 
+a {
+  color: #333;
+  text-decoration: underline;
+}
+
 #maincontent > div {
   max-width:900px;
   margin:0 auto;
@@ -22,9 +27,28 @@ h2 {
   background: #f5f5f5
 }
 
-a {
-  color: #333;
-  text-decoration: underline;
+#social {
+  border-top: 1px solid #a0aef0;
+  border-bottom: 1px solid #a0aef0;
+  padding-top:10px;
+}
+
+#mc-embedded-subscribe {
+  padding:8px 10px;
+  border-radius:0;
+  margin-bottom:10px;
+  background-color:#91A0F1;
+  border:1px solid #91A0F1;
+  color:white;
+}
+
+#mce-EMAIL {
+  padding:8px 10px;
+  border-radius:0;
+  margin-bottom:10px;
+  border:1px solid #91A0F1;
+  margin-right:5px;
+  width: 17em;
 }
 
 .jumbotron {
@@ -66,58 +90,28 @@ a {
   text-decoration: none;
 }
 
-#social {
-  border-top: 1px solid #a0aef0;
-  border-bottom: 1px solid #a0aef0;
-  padding-top:10px;
-}
-
-.person-card {
-  padding: 15px;
-  margin: 10px;
+.contact-card {
   text-align: center;
+  width: 150px;
+  height: 250px;
+  border: 1px solid red;
 }
 
-.person-name {
-  margin-top: 10px;
-}
-
-.active {
+.contact-card .active {
   background-color: #91a0f1;
   color: #fff !important;
 }
 
-.list-inline > li:first-child {
-  padding-left: 15px;
-}
-
-.person-card {
-  width: 150px;
-}
-.person-card img {
+.contact-card img {
   width: 100%;
   height: auto;
   max-width: 50%;
-  border-radius:50%;
-  border:3px solid white;
+  border-radius: 50%;
+  border: 3px solid white;
 }
 
-#mc-embedded-subscribe {
-  padding:8px 10px;
-  border-radius:0;
-  margin-bottom:10px;
-  background-color:#91A0F1;
-  border:1px solid #91A0F1;
-  color:white;
-}
-
-#mce-EMAIL {
-  padding:8px 10px;
-  border-radius:0;
-  margin-bottom:10px;
-  border:1px solid #91A0F1;
-  margin-right:5px;
-  width: 17em;
+.contact-card .person-name {
+  margin-top: 10px;
 }
 
 .alert-info {
