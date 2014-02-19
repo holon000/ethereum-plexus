@@ -6,6 +6,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform:lowercase;
+  margin-bottom:13px;
 }
 
 h2 {
@@ -93,7 +94,7 @@ a {
 .contact-card {
   text-align: center;
   width: 150px;
-  margin:5px;
+  margin:13px 5px;
   height:20em;
   float:left;
 }
