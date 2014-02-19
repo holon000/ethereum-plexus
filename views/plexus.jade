@@ -2,14 +2,12 @@ extends layout/layout
 
 block content
   header.container
-    div.logo-text
-      a(href='/',title='ethereum')
-        h1 ethereum
+    include includes/logo
     include includes/navbar
 
   div#feature.jumbotron.text-center
     include includes/feature
-    
+
   div#social
     include includes/social
               
