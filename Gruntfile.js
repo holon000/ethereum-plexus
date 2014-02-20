@@ -33,6 +33,7 @@ module.exports = function (grunt) {
     'linker/styles/bootstrap-theme.min.css',
     'linker/styles/font-awesome.min.css',
     'linker/styles/roboto.css',
+    'linker/styles/zocial.css',
     'linker/**/*.css'
   ];
 
