@@ -140,4 +140,19 @@ footer {
   display: none;
 }
 
+#feature {
+  position: relative;
+  overflow: hidden;
+  height:475px;
+  padding:0;
+}
+
+#feature .video-content {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
 
