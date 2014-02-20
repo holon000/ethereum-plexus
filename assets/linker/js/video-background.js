@@ -53,7 +53,7 @@ $(function() {
 				$adjRatio = $aspectRatio / $boxRatio; // The ratio of the video divided by the screen size
 							
 				// Set the container to be the width and height of the screen
-				$('#feature').css({'width' : $width+'px', 'height' : $height+'px'}); 
+				$('#feature').css({'width' : $width+'px', 'height' : $height+'-61px'}); 
 							
 				if($boxRatio < $aspectRatio) { // If the screen ratio is less than the aspect ratio..
 					// Set the width of the video to the screen size multiplied by $adjRatio
