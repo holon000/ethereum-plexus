@@ -122,3 +122,7 @@ a {
   background-color: #fff;
   border-radius: 0;
 }
+
+.list-inline > li {
+padding-left:1px;
+}
