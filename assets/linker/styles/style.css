@@ -95,16 +95,11 @@ a {
 .contact-card {
   text-align: center;
   width: 150px;
-  height:20em;
+  height: 12em;
   margin:13px 5px;
   float:left;
   overflow: hidden;
   padding: 5px;
-}
-
-.contact-card.active {
-  background-color: #91a0f1 !important;
-  color: #fff !important;
 }
 
 .contact-card img {
@@ -113,10 +108,16 @@ a {
   max-width: 50%;
   border-radius: 50%;
   border: 3px solid #ccc;
+  margin: 5px;
 }
 
-.contact-card .person-name {
-  margin-top: 10px;
+.contact-card.active {
+  background-color: #91a0f1 !important;
+  color: #fff !important;
+}
+
+.contact-card.active img {
+  border-color: #fff;
 }
 
 .alert-info {
@@ -130,6 +131,6 @@ a {
   padding-left:1px;
 }
 
-/*#profile .person-description {
+#profile .person-description {
   display: none;
-}*/
+}
