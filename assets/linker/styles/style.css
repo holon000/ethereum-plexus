@@ -9,10 +9,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom:13px;
 }
 
-h2 {
-  text-align: center;
-}
-
 a {
   color: #333;
   text-decoration: underline;
@@ -128,7 +124,7 @@ footer {
   text-align: center;
   width: 150px;
   height: 13em;
-  margin:13px 5px;
+  margin:5px;
   float:left;
   overflow: hidden;
   padding: 5px;
@@ -183,5 +179,4 @@ footer {
   margin-left:auto;
   margin-right:auto;
 }
-
 
