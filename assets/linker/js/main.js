@@ -1,7 +1,6 @@
 $( document ).ready( function() {
     
     $(".scroll").click(function (event) {
-        console.log('ready!');
         event.preventDefault();
         //calculate destination place
         var dest = 0;
@@ -14,6 +13,12 @@ $( document ).ready( function() {
         console.log(dest);
         $('html,body').animate({
             scrollTop: dest
-        }, 750, 'swing');
+        }, 400, 'swing');
     });
+
+    $(".scrolltop").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, 400, "swing");
+      return false;
+    });
+
 });
