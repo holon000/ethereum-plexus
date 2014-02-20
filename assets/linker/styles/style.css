@@ -34,6 +34,7 @@ a {
   padding-top:10px;
 }
 
+
 #mc-embedded-subscribe {
   padding:8px 10px;
   border-radius:0;
@@ -94,13 +95,15 @@ a {
 .contact-card {
   text-align: center;
   width: 150px;
-  margin:13px 5px;
   height:20em;
+  margin:13px 5px;
   float:left;
+  overflow: hidden;
+  padding: 5px;
 }
 
-.contact-card .active {
-  background-color: #91a0f1;
+.contact-card.active {
+  background-color: #91a0f1 !important;
   color: #fff !important;
 }
 
@@ -124,5 +127,9 @@ a {
 }
 
 .list-inline > li {
-padding-left:1px;
+  padding-left:1px;
 }
+
+/*#profile .person-description {
+  display: none;
+}*/
