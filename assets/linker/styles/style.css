@@ -18,6 +18,11 @@ a {
   text-decoration: underline;
 }
 
+footer {
+  border-top: 1px solid #a0aef0;
+  padding-bottom: 3em;
+}
+
 #maincontent > div {
   max-width:900px;
   margin:0 auto;
@@ -134,3 +139,5 @@ a {
 #profile .person-description {
   display: none;
 }
+
+
