@@ -66,6 +66,7 @@ module.exports = function (grunt) {
     // All of the rest of your app scripts imported here
     'linker/js/jquery-2.1.0.min.js',
     'linker/js/bootstrap.min.js',
+    'linker/js/jquery.countdown.min.js',
     'linker/js/video-background.js',
     'linker/js/main.js',
     'linker/**/*.js'
