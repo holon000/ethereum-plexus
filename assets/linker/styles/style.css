@@ -6,6 +6,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   text-transform:lowercase;
   margin-bottom:13px;
+  margin-top:5px;
 }
 
 a {
@@ -41,8 +42,6 @@ footer {
 }
 
 #interactive {
-  border-top: 1px solid #a0aef0;
-  border-bottom: 1px solid #a0aef0;
   padding-top:10px;
   margin-top:-60px;
 }
@@ -191,30 +190,34 @@ footer {
 }
 
 #news-content {
-background-color:transparent;
+  background-color:transparent;
 }
 
 #what-content {
-background-color:#fff;
-background-image:url('/images/slice.png');
+  background-color:#fff;
+  background-image:url('/images/slice.png');
 }
 
 #why-content {
-background-color:transparent;
+  background-color:transparent;
 }
 
 #philosophy-content {
-background-color:#fff;
+  background-color:#fff;
 }
 
 #how-content {
-background-color:transparent;
+  background-color:transparent;
 }
 
 #who-content {
-background-color:transparent;
+  background-color:transparent;
 }
 
 #join-content {
-background-color:transparent;
+  background-color:transparent;
+}
+
+.news-top-right {
+  padding-top:5px;
 }
