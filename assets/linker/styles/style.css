@@ -147,11 +147,6 @@ footer {
   margin: 5px;
 }
 
-.contact-card.active {
-  background-color: #91a0f1 !important;
-  color: #fff !important;
-}
-
 .contact-card.active img {
   border-color: #fff;
 }
@@ -230,7 +225,7 @@ footer {
 }
 
 .news-top-right {
-  padding-top:10px;
+  padding-top:15px;
 }
 
 .mailchimp {
@@ -241,4 +236,32 @@ footer {
   font-family:robotoregular;
   letter-spacing:0.25em;
   color:#fff;
+}
+
+.fa-2x {
+  font-size:1.5em;
+}
+
+.dl-box {
+  padding-top: 40px;
+}
+
+.dl-row {
+  padding-top:10px;
+  padding-left:0;
+  padding-right:0;
+}
+
+.dl-row1, .dl-row2, .dl-row3, .dl-row4 {
+  padding-bottom:30px;
+}
+
+.dl-icons {
+  background-color:#fff;
+  padding:12px;
+  border-radius:50%;
+}
+
+.news-icon {
+  padding-right:5px;
 }
