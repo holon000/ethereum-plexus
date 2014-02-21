@@ -3,7 +3,6 @@ body {
   font-family: RobotoLight;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   text-transform:lowercase;
   margin-bottom:13px;
@@ -12,6 +11,14 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #333;
   text-decoration: underline;
+}
+
+img {
+  max-width:100%;
+}
+
+.maincontent {
+  background-image:url('/images/bg-img.jpg')
 }
 
 .content-box {
@@ -186,7 +193,7 @@ footer {
 }
 
 #news-content {
-background-color:#f4f4f4;
+background-color:transparent;
 }
 
 #what-content {
@@ -194,7 +201,7 @@ background-color:#fff;
 }
 
 #why-content {
-background-color:#f4f4f4;
+background-color:transparent;
 }
 
 #how-content {
@@ -202,9 +209,9 @@ background-color:#fff;
 }
 
 #who-content {
-background-color:#f4f4f4;
+background-color:transparent;
 }
 
 #join-content {
-background-color:#fff;
+background-color:transparent;
 }
