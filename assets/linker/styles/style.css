@@ -24,7 +24,6 @@ img {
 }
 
 footer {
-  border-top: 1px solid #a0aef0;
   padding-bottom: 1em;
   padding-top: 1em;
 }
@@ -61,7 +60,7 @@ footer {
   border-radius:0;
   margin-bottom:10px;
   border:1px solid #9d9d9d;
-  margin-right:5px;
+  margin-right:2px;
   width: 17em;
 }
 
@@ -189,6 +188,14 @@ footer {
   margin-right:auto;
 }
 
+#interactive-content {
+  background-color:#fff;
+}
+
+.interactive-middle {
+  padding:0;
+}
+
 #news-content {
   background-color:transparent;
 }
@@ -196,6 +203,10 @@ footer {
 #what-content {
   background-color:#fff;
   background-image:url('/images/slice.png');
+}
+
+#what-left {
+  margin-top:60px;
 }
 
 #why-content {
@@ -224,4 +235,10 @@ footer {
 
 .mailchimp {
   padding-top:10px;
+}
+
+.ethereum-logo {
+  font-family:robotoregular;
+  letter-spacing:0.25em;
+  color:#fff;
 }
