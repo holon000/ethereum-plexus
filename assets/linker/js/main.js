@@ -20,5 +20,8 @@ $( document ).ready( function() {
       $("html, body").animate({ scrollTop: 0 }, 400, "swing");
       return false;
     });
-
+    $('#countdown').countdown({
+        until: new Date(2014, 03-1, 01),
+        padZeroes: true,
+    });
 });
