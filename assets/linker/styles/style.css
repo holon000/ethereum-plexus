@@ -38,6 +38,7 @@ footer {
   background-image:url('/images/bg-img.jpg');
   background-color: #f5f5f5;
   background-size:100%;
+  background-repeat: no-repeat;
 }
 
 #interactive {
