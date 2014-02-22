@@ -25,6 +25,6 @@ $( document ).ready( function() {
     $('#countdown').countdown({
         until: new Date(2014, 03-1, 01),
         padZeroes: true,
-        layout: '<b><span class="timer-unit">{dnn}</span><span class="timer-unit-desc">{dl}</span> : <span class="timer-unit">{hnn}</span> <span class="timer-unit-desc">{hl}</span> : <span class="timer-unit">{mnn}</span> <span class="timer-unit-desc">{ml}</span> : <span class="timer-unit">{snn}</span> <span class="timer-unit-desc">{sl}</span></b>',
+        layout: '<b><span class="timer-unit">{dnn}</span><span class="timer-unit-desc">{dl}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{hnn}</span> <span class="timer-unit-desc">{hl}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{mnn}</span> <span class="timer-unit-desc">{ml}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{snn}</span> <span class="timer-unit-desc">{sl}</span></b>',
     });
 });
