@@ -1,12 +1,13 @@
 div#philosophy-left.text-right.pull-left.col-xs-6
   h2 philosophy
+  p#philotext
   :markdown
     Simplicity - the Ethereum protocol should be as simple as possible, even at the cost of some data storage inefficiency or time inefficiency. An average programmer should ideally be able to follow and implement the entire specification, so as to eventually help minimize the influence that any specific individual or elite group can have on the protocol and furthering the vision of Ethereum as a protocol that is open to all. Optimizations which add complexity should not be included unless they provide very substantial benefit.
 div#philosophy-right.pull-right.col-xs-6
-  img(src='images/philosophy.png', width='540px', height='359px', alt='philosophymap', usemap='#philosophymap')
+  img#philoimg(src='images/philosophy.png', width='540px', height='359px', alt='philosophymap', usemap='#philosophymap')
 map(name='philosophymap')
-  area(shape='circle', data-key="1", coords='55,75,40', href='#', alt='philosophy1')
-  area(shape='circle', data-key="2", coords='175,230,40', href='#', alt='philosophy2')
-  area(shape='circle', data-key="3", coords='305,135,40', href='#', alt='philosophy3')
-  area(shape='circle', data-key="4", coords='415,290,40', href='#', alt='philosophy4')
-  area(shape='circle', data-key="5", coords='480,65,40', href='#', alt='philosophy5')
+  area(shape='circle', data-name="item1", coords='55,75,40', href='#', alt='philosophy1')
+  area(shape='circle', data-name="item2", coords='175,230,40', href='#', alt='philosophy2')
+  area(shape='circle', data-name="item3", coords='305,135,40', href='#', alt='philosophy3')
+  area(shape='circle', data-name="item4", coords='415,290,40', href='#', alt='philosophy4')
+  area(shape='circle', data-name="item5", coords='480,65,40', href='#', alt='philosophy5')

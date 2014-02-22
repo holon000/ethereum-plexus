@@ -29,13 +29,53 @@ $( document ).ready( function() {
         layout: '<b><span class="timer-unit">{dnn}</span><span class="timer-unit-desc">{dl}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{hnn}</span> <span class="timer-unit-desc">{hl}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{mnn}</span> <span class="timer-unit-desc">{ml}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{snn}</span> <span class="timer-unit-desc">{sl}</span></b>',
     });
     
-        // bind using "data-key" as a mapKey, and select four states
+    // bind using "data-key" as a mapKey, and select four states
+    // $('#philosophymap')
+    //   .mapster({
+    //     mapKey: 'data-key'
+    //   })
+    //   .mapster('set',true,'item1,item2,item3,item4,item5')
+    //   .mapster('set_options',{
+    //     onMouseover: function(){console.log('mouse over')}
+    //     onMouseout: function(){console.log('mouse out')}
+    //   });
 
-    $('#philosophymap')
-        .mapster({
-            mapKey: 'data-key'
-        })
-        .mapster('set',true,'1,2,3,4,5');
+    var map = $('#philoimg');
+    var inArea = false;
+    var single_opts = {};
+    var all_opts = {};
+    var initial_opts = {
+      mapKey: 'data-name',
+      isSelectable: false,
+      onMouseover: function (data) {
+        inArea = true;
+        console.log('onMouseover', data.key);
+
+        // $('#beatles-caption-header').text(captions[data.key][0]);
+        // $('#beatles-caption-text').text(captions[data.key][1]);
+        // $('#beatles-caption').show();
+      },
+      onMouseout: function (data) {
+        inArea = false;
+        console.log('onMouseout', data.key);
+        // $('#beatles-caption').hide();
+      }
+    };
+    opts = $.extend({}, all_opts, initial_opts, single_opts);
+    map.mapster('unbind')
+        .mapster(opts)
+        .bind('mouseover', function () {
+            if (!inArea) {
+                map.mapster('set_options', all_opts)
+                    .mapster('set', true, 'all')
+                    .mapster('set_options', single_opts);
+            }
+        }).bind('mouseout', function () {
+            if (!inArea) {
+                map.mapster('set', false, 'all');
+            }
+        });
+
     
 
     $('#how button.prev').click(function(){updateFeature(-1)});
