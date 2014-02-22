@@ -280,10 +280,29 @@ footer {
   margin: 10px;
 }
 
+#countdown {
+  white-space: nowrap;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 #whatsample {
   font-size: 110%;
   line-height: 125%;
   color: #999;
   border-radius: 0;
+}
+
+.timer-unit {
+  border: 1px solid black;
+  font-size: 200%;
+  border-radius: 50%;
+  padding: 1ex;
+  margin-left: 1ex;
+  margin-right: 1ex;
+}
+
+.timer-unit-desc {
+  display: none;
 }
 
