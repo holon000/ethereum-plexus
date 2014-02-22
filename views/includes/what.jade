@@ -1,5 +1,11 @@
 div#what-left.pull-left.col-xs-6
-  img(src='images/5linesnamecoin.png')
+  pre#whatsample
+    | if tx.value &lt; block.basefee * 200:
+    |   stop
+    | if contract.storage[tx.data[0]] or tx.data[0] &lt; 100:
+    |   stop
+    | contract.storage[tx.data[0]] = tx.data[1]
+
 
 div#what-right.pull-right.col-xs-6
   h2 What?

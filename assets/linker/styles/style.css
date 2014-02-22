@@ -279,3 +279,11 @@ footer {
   display: inline-table;
   margin: 10px;
 }
+
+#whatsample {
+  font-size: 110%;
+  line-height: 125%;
+  color: #999;
+  border-radius: 0;
+}
+
