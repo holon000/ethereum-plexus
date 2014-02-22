@@ -27,4 +27,13 @@ $( document ).ready( function() {
         padZeroes: true,
         layout: '<b><span class="timer-unit">{dnn}</span><span class="timer-unit-desc">{dl}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{hnn}</span> <span class="timer-unit-desc">{hl}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{mnn}</span> <span class="timer-unit-desc">{ml}</span> <span class="timer-unit-sep">:</span> <span class="timer-unit">{snn}</span> <span class="timer-unit-desc">{sl}</span></b>',
     });
+    
+        // bind using "data-key" as a mapKey, and select four states
+
+    $('#philosophymap')
+        .mapster({
+            mapKey: 'data-key'
+        })
+        .mapster('set',true,'1,2,3,4,5');
+    
 });
