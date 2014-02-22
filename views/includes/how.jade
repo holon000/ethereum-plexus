@@ -1,7 +1,10 @@
-div#how-left.pull-left.text-center.col-xs-6
-  img(src='images/round.png')
+div.pull-left.text-center.col-xs-6
+  //- img(src='images/round.png')
+  div.content-circle
+    i.fa.fa-fw.fa-lock.fa-8x
+    p This is some content
 
-div#how-right.pull-right.col-xs-6
+div.pull-right.col-xs-6
   h2 What can you make out of ether?
   :markdown
     Contracts are the main building block of Ethereum.
@@ -11,5 +14,5 @@ div#how-right.pull-right.col-xs-6
     Thanks to Turing-completeness, Ethereum contracts let you create self-enforcing smart contracts with any conditions that can be mathematically defined.
     You can find out more in [the whitepaper](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-White-Paper).
 
-div#how-center.text-center
+div.text-center
   img(src='images/how.png')

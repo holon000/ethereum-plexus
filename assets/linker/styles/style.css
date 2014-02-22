@@ -315,3 +315,17 @@ footer {
 .squr {
   margin-top:30px;
 }
+
+.content-circle {
+  width: 250px;
+  height: 250px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-color: white;
+  padding: 3em;
+  margin-left: 6em;
+}
+
+.fa-8x {
+  font-size: 800%;
+}
