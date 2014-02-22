@@ -19,8 +19,8 @@ img {
 }
 
 .content-box {
-  padding-bottom:50px;
-  padding-top:50px;
+  padding-bottom:70px;
+  padding-top:65px;
 }
 
 footer {
@@ -67,11 +67,7 @@ footer {
 }
 
 .jumbotron {
-  background: #f5f5f5 url('/images/jumbotron-background.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #f5f5f5; 
   margin:0;
   padding-bottom:45px;
   padding-top:15px;  
@@ -278,6 +274,10 @@ footer {
   padding-right:5px;
 }
 
+.news-icon-last {
+  padding-right:0px !important;
+}
+
 .countdown_amount {
   border: 1px solid black;
   border-radius: 100%;
@@ -336,18 +336,20 @@ footer {
   border-radius: 50%;
   background-color: white;
   padding: 3em;
-  margin-left: 6em;
+  margin-left: 5em;
   display: inline-block;
 }
 
 .fa-8x {
-  font-size: 800%;
+  font-size: 900%;
 }
 
 #how button.paging {
-  border: none;
+  border: none !important;
   background-image: none;
   background-color: transparent;
+  top:100px;
+  position:absolute;
 }
 
 #how button.paging:disabled{
