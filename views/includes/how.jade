@@ -1,8 +1,29 @@
-div.pull-left.text-center.col-xs-6
+div.text-center.col-xs-6
   //- img(src='images/round.png')
-  div.content-circle
-    i.fa.fa-fw.fa-lock.fa-8x
-    p This is some content
+  button.paging.prev(type='button',disabled=true)
+    i.fa.fa-fw.fa-arrow-circle-o-left.fa-3x
+  div#content-circle
+    span
+      i.fa.fa-fw.fa-money.fa-8x
+      p Create a Currency
+    span.hidden
+      i.fa.fa-fw.fa-briefcase.fa-8x
+      p Savings Wallet
+    span.hidden
+      i.fa.fa-fw.fa-sitemap.fa-8x
+      p Financial Derivatives
+    span.hidden
+      i.fa.fa-fw.fa-asterisk.fa-8x
+      p Decentralized Organizations
+    span.hidden
+      i.fa.fa-fw.fa-pencil-square-o.fa-8x
+      p Name Registration
+    span.hidden
+      i.fa.fa-fw.fa-lock.fa-8x
+      p Data storage
+  button.paging.next(type='button')
+    i.fa.fa-fw.fa-arrow-circle-o-right.fa-3x
+
 
 div.pull-right.col-xs-6
   h2 What can you make out of ether?
