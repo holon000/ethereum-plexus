@@ -19,8 +19,8 @@ $(function() {
 			
 			// Resize image accordingly
 			$('#feature').css({
-				'background-image' : 'url(poster.jpg)', 
-				'background-size' : 'cover', 
+				//'background-image' : 'url(../images/poster.jpg)', 
+				//'background-size' : 'cover', 
 				'width' : $width+'px', 
 				'height' : $height+'px'
 			});

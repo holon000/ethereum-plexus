@@ -67,10 +67,11 @@ footer {
 }
 
 .jumbotron {
-  background: #f5f5f5; 
+  background: #f5f5f5 url('/images/poster.jpg') no-repeat center center fixed; 
   margin:0;
   padding-bottom:45px;
-  padding-top:15px;  
+  padding-top:15px;
+  background-size:cover;
 }
 
 .logo-text {
