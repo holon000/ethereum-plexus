@@ -265,3 +265,17 @@ footer {
 .news-icon {
   padding-right:5px;
 }
+
+.countdown_amount {
+  border: 1px solid black;
+  border-radius: 100%;
+  margin: 10px;
+  padding: 1ex;
+  width: 2em;
+  height: 2em;
+}
+
+.countdown_section {
+  display: inline-table;
+  margin: 10px;
+}

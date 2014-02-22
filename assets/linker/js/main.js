@@ -23,5 +23,6 @@ $( document ).ready( function() {
     $('#countdown').countdown({
         until: new Date(2014, 03-1, 01),
         padZeroes: true,
+        layout: $('#countdown').html(),
     });
 });
