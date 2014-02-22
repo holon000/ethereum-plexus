@@ -292,6 +292,8 @@ footer {
   line-height: 125%;
   color: #999;
   border-radius: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .timer-unit {
