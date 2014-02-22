@@ -1,5 +1,5 @@
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {*/
 @font-face {
 	font-family: 'RobotoLight';
 	src: url('../fonts/roboto-light-webfont.svg') format('svg');
@@ -11,7 +11,7 @@
     font-style: normal;
 
 	}
-}
+/*}*/
 
 
 
