@@ -81,10 +81,14 @@ $( document ).ready( function() {
 
       // get shown item. does nit handle multiple shown well yet
       $.each(children, function(index, value){
-        if (! $(value).hasClass('hidden')) {
+        if ($(value).hasClass('active')) {
           currentIndex = index;
-          $(value).addClass('hidden')//.fadeIn(500);
-          return;
+          $(value).fadeOut('fast',function(){
+            $(value).removeClass('active');
+            $(children[newIndex]).fadeIn('slow',function(){
+              $(children[newIndex]).addClass('active');
+            });
+          });
         }
       });
 
@@ -100,7 +104,7 @@ $( document ).ready( function() {
         $('#how button.paging.next').prop('disabled', false);
       }
 
-      $(children[newIndex]).fadeToggle(700).removeClass('hidden');
+      
 
     }
 });

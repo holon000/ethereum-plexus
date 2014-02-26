@@ -352,3 +352,14 @@ footer {
 #how button.paging:disabled{
   color: gray;
 }
+
+#content-circle > span {
+  display:none;
+
+}
+
+#content-circle > span.active {
+  display: inherit;
+
+}
+
