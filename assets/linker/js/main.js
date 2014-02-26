@@ -61,17 +61,17 @@ $( document ).ready( function() {
             }
         });
 
-    var setChildrenHidden = function(selector) {
+    /*var setChildrenHidden = function(selector) {
       var children = $(selector).children();
       $.each(children, function(index, value){
         if (! $(value).hasClass('hidden')) {
           $(value).addClass('hidden');
         }
       });
-    }
+    }*/
 
-    $('#how button.prev').click(function(){updateFeature(-1)});
-    $('#how button.next').click(function(){updateFeature(1)});
+    $('#how button.paging.prev').click(function(){updateFeature(-1)});
+    $('#how button.paging.next').click(function(){updateFeature(1)});
 
     var updateFeature = function(direction) {
       //direction should be a positive or negative value to indicate how many elements to walk, i.e. 2 for forwards 2, -1 for backwards
@@ -83,7 +83,7 @@ $( document ).ready( function() {
       $.each(children, function(index, value){
         if (! $(value).hasClass('hidden')) {
           currentIndex = index;
-          $(value).addClass('hidden');
+          $(value).addClass('hidden')//.fadeIn(500);
           return;
         }
       });
@@ -91,16 +91,16 @@ $( document ).ready( function() {
       var newIndex = currentIndex + direction;
       if (newIndex <= 0) {
         newIndex = 0;
-        $('#how button.prev').prop('disabled', true);
+        $('#how button.paging.prev').prop('disabled', true);
       } else if (newIndex >= maxIndex) {
         newIndex = maxIndex;
-        $('#how button.next').prop('disabled', true);
+        $('#how button.paging.next').prop('disabled', true);
       } else {
-        $('#how button.prev').prop('disabled', false);
-        $('#how button.next').prop('disabled', false);
+        $('#how button.paging.prev').prop('disabled', false);
+        $('#how button.paging.next').prop('disabled', false);
       }
 
-      $(children[newIndex]).removeClass('hidden');
+      $(children[newIndex]).fadeToggle(1000).removeClass('hidden');
 
     }
 });
