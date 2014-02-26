@@ -40,7 +40,7 @@ $( document ).ready( function() {
         inArea = true;
         var target = '#' + data.key;
         setChildrenHidden('#philotexts');
-        $(target).removeClass('hidden');
+        $(target).fadeToggle(700).removeClass('hidden');
       },
       onMouseout: function (data) {
         inArea = false;
@@ -61,14 +61,14 @@ $( document ).ready( function() {
             }
         });
 
-    /*var setChildrenHidden = function(selector) {
+    var setChildrenHidden = function(selector) {
       var children = $(selector).children();
       $.each(children, function(index, value){
         if (! $(value).hasClass('hidden')) {
           $(value).addClass('hidden');
         }
       });
-    }*/
+    }
 
     $('#how button.paging.prev').click(function(){updateFeature(-1)});
     $('#how button.paging.next').click(function(){updateFeature(1)});
@@ -100,7 +100,7 @@ $( document ).ready( function() {
         $('#how button.paging.next').prop('disabled', false);
       }
 
-      $(children[newIndex]).fadeToggle(1000).removeClass('hidden');
+      $(children[newIndex]).fadeToggle(700).removeClass('hidden');
 
     }
 });
