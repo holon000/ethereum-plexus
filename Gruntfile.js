@@ -68,9 +68,7 @@ module.exports = function (grunt) {
     'linker/js/bootstrap.min.js',
     'linker/js/jquery.countdown.min.js',
     'linker/js/jquery.imagemapster.min.js',
-    'linker/js/jquery.ui.totop.min.js'
     'linker/js/video-background.js',
-    'linker/js/easing.js'
     'linker/js/main.js',
     'linker/**/*.js'
   ];
