@@ -1,4 +1,4 @@
-div#what-left.pull-left.col-xs-6
+div#what-left.pull-left.col-xs-12.col-sm-8.col-md-6
   pre#whatsample
     | if tx.value &lt; block.basefee * 200:
     |   stop
@@ -7,7 +7,7 @@ div#what-left.pull-left.col-xs-6
     | contract.storage[tx.data[0]] = tx.data[1]
 
 
-div#what-right.pull-right.col-xs-6
+div#what-right.pull-right.col-xs-12.col-sm-4.col-md-6
   h2 What?
   :markdown
     Ethereum is a next-generation distributed cryptographic ledger that is designed to allow users to encode advanced transaction types, smart contracts and decentralized applications into the blockchain. Ethereum will support custom currencies or "colored coins", financial derivatives, and much more, but unlike many previous networks that attempted to accomplish the same thing Ethereum does not attempt to constrain users into using specific "features"; instead, the ledger includes a built-in Turing-complete programming language that can be used to construct any kind of contract that can be mathematically defined.
