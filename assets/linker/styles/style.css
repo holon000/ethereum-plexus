@@ -116,6 +116,10 @@ footer {
   text-align:center;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  padding-bottom:60px;
+}
+
 .navbar-default {
   background-color:transparent;
   border-color:none;
