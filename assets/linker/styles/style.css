@@ -98,6 +98,11 @@ footer {
   z-index:100;
 }
 
+.navbar {
+  border:none;
+  margin-bottom:0;
+}
+
 .navbar-nav {
   color: #333;
   text-transform: lowercase;
@@ -111,6 +116,14 @@ footer {
   text-align:center;
 }
 
+.navbar-default {
+  background-color:transparent;
+  border-color:none;
+  z-index:1000;
+  background-image:none;
+  border-radius:none;
+  box-shadow:none;
+}
 .navbar-nav > li {
   display:block;
   float:left;
@@ -355,10 +368,8 @@ footer {
 
 #content-circle > span {
   display:none;
-
 }
 
 #content-circle > span.active {
   display: inherit;
-
 }
