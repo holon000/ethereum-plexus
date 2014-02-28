@@ -388,5 +388,9 @@ img[usemap] {
 }
 
 .video-responsive {
-  margin-top:50px;
+  padding:5px;
+}
+
+.panel {
+  border-radius:0;
 }

@@ -107,4 +107,6 @@ $( document ).ready( function() {
     }
     $('img[usemap]').rwdImageMaps();
     $(".video-responsive").fitVids();
+    $('#main-slider').liquidSlider();
+
 });

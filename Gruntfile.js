@@ -32,6 +32,8 @@ module.exports = function (grunt) {
     'linker/styles/bootstrap.min.css',
     'linker/styles/bootstrap-theme.min.css',
     'linker/styles/font-awesome.min.css',
+    'linker/styles/liquid-slider.css',
+    'linker/styles/animate.css',
     'linker/styles/roboto.css',
     'linker/styles/zocial.css',
     'linker/**/*.css'
@@ -70,6 +72,8 @@ module.exports = function (grunt) {
     'linker/js/jquery.imagemapster.min.js',
     'linker/js/jquery.rwdImageMaps.js',
     'linker/js/jquery.fitvids.js',
+    'linker/js/jquery.liquid-slider-custom.min.js',
+    'linker/js/jquery.easing.1.3.js',
     'linker/js/video-background.js',
     'linker/js/main.js',
     'linker/**/*.js'
