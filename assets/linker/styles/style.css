@@ -309,7 +309,6 @@ footer {
 }
 
 #countdown {
-  white-space: nowrap;
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -406,3 +405,30 @@ img[usemap] {
   padding:5px;
 }
 
+.news-bottom {
+  margin-bottom: 1em;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .timer-unit {
+    border: 1px solid #333;
+    font-size: 150%;
+    border-radius: 50%;
+    padding: 1ex;
+    margin-left: 1ex;
+    margin-right: 1ex;
+    font-family:RobotoThin !important;
+    display: inline-block;
+    position: relative;
+  }
+
+  .timer-unit-desc {
+    position: relative;
+    margin-top: 1ex;
+    font-size: 100%;
+  }
+}
