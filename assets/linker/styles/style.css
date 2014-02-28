@@ -409,7 +409,7 @@ img[usemap] {
   background-color:transparent;
 }
 
-a:hover, a:focus {
+.philosophy-icons:hover {
   color:#fff;
 }
 
