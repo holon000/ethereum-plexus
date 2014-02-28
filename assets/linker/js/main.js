@@ -114,6 +114,7 @@ $( document ).ready( function() {
     $('#who-slider').liquidSlider({
        autoSlide: true,
        dynamicTabs: false,
+       dynamicArrows: true,
     });
     
 });
