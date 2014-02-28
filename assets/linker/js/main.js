@@ -112,6 +112,7 @@ $( document ).ready( function() {
        dynamicTabs: true,
        dynamicArrows: false,
        slideEaseDuration: 600,
+       autoHeight: true,
     });
     $('#who-slider').liquidSlider({
        autoSlide: true,
