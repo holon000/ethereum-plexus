@@ -401,6 +401,11 @@ img[usemap] {
   width: auto;
 }
 
+.panel {
+  box-shadow:none;
+  border-radius:0;
+}
+
 .video-responsive {
   padding:5px;
 }
@@ -417,6 +422,40 @@ img[usemap] {
   margin-left:-22em;
 }
 
+.philosophy-icons {
+  background-color:#ccc;
+  border-radius:50%;
+  width:75px;
+  height:75px;
+}
+
+.philosophy-icon1 {
+  padding:18px 12px;
+  font-size:185%;
+}
+
+.philosophy-icon2 {
+  padding:11px 13px;
+  font-size:200%;
+  margin-top:1.6em;
+}
+
+.philosophy-icon3 {
+  padding:11px 23px;
+  font-size:200%;
+  margin-top:0.6em;
+}
+
+.philosophy-icon4 {
+  padding:12px 15px;
+  font-size:200%;
+  margin-top:2.2em;
+}
+
+.philosophy-icon5 {
+  padding:8px 11px;
+  font-size:193%;
+}
 @media (max-width: 768px) {
   .timer-unit {
     border: 1px solid #333;
