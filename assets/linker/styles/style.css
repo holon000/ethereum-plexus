@@ -434,6 +434,7 @@ a:hover {
   margin-top: 5px;
   text-align: center;
   width: 8em;
+  text-decoration:none;
 }
 
 .philotext:hover {
