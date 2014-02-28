@@ -406,6 +406,7 @@ img[usemap] {
 .panel {
   box-shadow:none;
   border-radius:0;
+  background-color:transparent;
 }
 
 .video-responsive {
