@@ -413,6 +413,25 @@ img[usemap] {
   color:#fff;
 }
 
+.philosophy-icons:focus {
+  color:#fff;
+}
+
+a:hover {
+  color:#333;
+}
+
+.philotext {
+  font-size: 0.35em;
+  margin-top: 5px;
+  text-align: center;
+  width: 8em;
+}
+
+.philotext:hover {
+  color:#fff;
+}
+
 .video-responsive {
   padding:5px;
 }
