@@ -118,6 +118,8 @@ footer {
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   padding-bottom:60px;
+  max-height: none;
+  overflow-x: hidden;
 }
 
 .navbar-default {
@@ -510,4 +512,19 @@ img[usemap] {
    .button-previous {
      margin-left:-20em;
    }
+   .navbar-nav > li {
+     display:block;
+     float:left;
+     list-style:none;
+     margin:0;
+     padding:0;
+     position:relative;
+     right:50%;
+     clear:both;
+   }
+   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    padding-bottom:150px;
+    max-height: none;
+    overflow-x: hidden;
+ }
 }
