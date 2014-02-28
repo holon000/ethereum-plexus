@@ -1,12 +1,11 @@
-h2 community
+h2 follow
   p
-  img(src='/images/map.png', width='800px', height='402px', alt='meetupmap', usemap='#meetupmap')
-map(name='meetupmap')
-  area(shape='circle', coords='155,140,30', href='http://www.meetup.com/Bitcoin-Toronto/', alt='Toronto')
-  area(shape='circle', coords='385,140,30', href='http://www.meetup.com/ethereum/', alt='London')
-  area(shape='circle', coords='425,245,30', href='http://www.meetup.com/Ethereum-Tokyo-Meetup/', alt='Tokyo')
-  area(shape='circle', coords='595,170,30', href='http://ethereum.meetup.com/', alt='Congo')
-
+  img(src='/images/map.png', width='800', height='402', alt='meetupmap', usemap='#meetupmap')
+map#meetupmap(name='meetupmap') 
+  area(shape='circle', coords='155,140,30', href='http://www.meetup.com/Bitcoin-Toronto/', title='Toronto', alt='Toronto')
+  area(shape='circle', coords='385,140,30', href='http://www.meetup.com/ethereum/', title='London', alt='London')
+  area(shape='circle', coords='425,245,30', href='http://www.meetup.com', title='Congo', alt='Congo')
+  area(shape='circle', coords='595,170,30', href='http://www.meetup.com/Ethereum-Tokyo-Meetup/', title='Tokyo', alt='Tokyo')
 :markdown
   Find a [local Ethereum meetup group](http://www.meetup.com).
   

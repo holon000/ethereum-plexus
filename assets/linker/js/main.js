@@ -21,7 +21,6 @@ $( document ).ready( function() {
       return false;
     });
 
-
     $('#countdown').countdown({
         until: $.countdown.UTCDate(0, new Date(2014, 03-1, 01)),
         timezone: 0,
@@ -59,6 +58,7 @@ $( document ).ready( function() {
             if (!inArea) {
                 map.mapster('set', false, 'all');
             }
+            
         });
 
     var setChildrenHidden = function(selector) {
@@ -103,8 +103,8 @@ $( document ).ready( function() {
         $('#how button.paging.prev').prop('disabled', false);
         $('#how button.paging.next').prop('disabled', false);
       }
-
-      
-
+     
     }
+    $('img[usemap]').rwdImageMaps();
+    
 });

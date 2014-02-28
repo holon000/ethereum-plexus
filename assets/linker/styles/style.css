@@ -128,6 +128,7 @@ footer {
   border-radius:none;
   box-shadow:none;
 }
+
 .navbar-nav > li {
   display:block;
   float:left;
@@ -188,6 +189,7 @@ footer {
   height:375px;
   padding:0;
   top:-60px;
+  margin-top:-60px;
 }
 
 #feature .video-content {
@@ -377,3 +379,11 @@ footer {
 #content-circle > span.active {
   display: inherit;
 }
+
+img[usemap] {
+  border: medium none;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
