@@ -27,7 +27,7 @@
 * markup.
 *******************************************************/
 .ls-wrapper .ls-preloader {  
-  background: url(../img/loading.gif) #f2f2f2 no-repeat center 75px;
+  background: url(../img/loading.gif) none no-repeat center 75px;
   opacity:1;
   /* Do not edit below this line */
   width:100%;
@@ -67,7 +67,7 @@
 * max width instead
 *******************************************************/
 .ls-wrapper .liquid-slider {
-  background: #f2f2f2;
+  background: none;
   width: 1030px;
   /* Do not edit below this line */
   float: left;
@@ -152,12 +152,12 @@
   padding: 10px 15px;  
 }
 .ls-wrapper .ls-nav a:hover {
-  background: #f2f2f2;
+  background: none;
   color: #333333;
   text-shadow: none;
 }
 .ls-wrapper .ls-nav .current {
-  background: #f2f2f2;
+  background: none;
 }
 .currentCrossLink {
   font-weight: bold;

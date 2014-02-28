@@ -120,5 +120,12 @@ $( document ).ready( function() {
        dynamicArrows: true,
        slideEaseDuration: 600,
     });
-    
+    $('#philosophy-slider').liquidSlider({
+       autoSlide: false,
+       dynamicTabs: false,
+       dynamicArrows: false,
+       slideEaseDuration: 600,
+        crossLinks: true,
+    });
+
 });
