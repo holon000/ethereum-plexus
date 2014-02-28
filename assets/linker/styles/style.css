@@ -413,6 +413,23 @@ img[usemap] {
   white-space: nowrap;
 }
 
+.button-previous {
+  margin-left:-22em;
+}
+
+@media (max-width: 768px) {
+  .timer-unit {
+    border: 1px solid #333;
+    font-size: 150%;
+    border-radius: 50%;
+    padding: 1ex;
+    margin-left: 1ex;
+    margin-right: 1ex;
+    font-family:RobotoThin !important;
+    display: inline-block;
+    position: relative;
+  }
+
 @media (max-width: 768px) {
   .timer-unit {
     border: 1px solid #333;
@@ -431,4 +448,27 @@ img[usemap] {
     margin-top: 1ex;
     font-size: 100%;
   }
+  
+  .fa-8x {
+    font-size:500%;
+   }
+   
+   #content-circle {
+     width:150px;
+     height:150px;
+     padding:1.2em;
+     margin:0;
+     margin-bottom:1em;
+   }
+   
+   #how button.paging {
+     top:55px;
+   }
+   
+   button.paging prev {
+     margin-left:-65px;
+   }
+   .button-previous {
+     margin-left:-20em;
+   }
 }
