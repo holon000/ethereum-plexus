@@ -47,6 +47,10 @@ footer {
   margin-top:-60px;
 }
 
+#news-slider-nav-ul > li > a {
+  text-decoration: underline;
+  text-transform: lowercase;
+}
 
 #mc-embedded-subscribe {
   padding:8px 10px;
