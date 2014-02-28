@@ -37,6 +37,12 @@ npm-debug.log
 .netbeans
 nbproject
 .idea
+.*swp
+.*swo
+
+#######################
+# cache
+#=#####################
 .sass-cache/
 
 
