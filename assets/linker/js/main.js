@@ -107,6 +107,15 @@ $( document ).ready( function() {
     }
     $('img[usemap]').rwdImageMaps();
     $(".video-responsive").fitVids();
-    $('#main-slider').liquidSlider();
-
+    $('#news-slider').liquidSlider({
+       autoSlide: false,
+       dynamicTabs: true,
+       dynamicArrows: false,
+    });
+    $('#who-slider').liquidSlider({
+       autoSlide: true,
+       dynamicTabs: false,
+       dynamicArrows: true,
+    });
+    
 });

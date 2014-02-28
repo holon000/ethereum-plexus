@@ -5,7 +5,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform:lowercase;
-  margin-bottom:5px;
+  margin-bottom:10px;
   margin-top:5px;
 }
 
@@ -406,6 +406,3 @@ img[usemap] {
   padding:5px;
 }
 
-.panel {
-  border-radius:0;
-}
