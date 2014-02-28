@@ -409,6 +409,10 @@ img[usemap] {
   background-color:transparent;
 }
 
+a:hover, a:focus {
+  color:#fff;
+}
+
 .video-responsive {
   padding:5px;
 }
