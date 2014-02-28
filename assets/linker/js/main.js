@@ -111,11 +111,13 @@ $( document ).ready( function() {
        autoSlide: false,
        dynamicTabs: true,
        dynamicArrows: false,
+       slideEaseDuration: 600,
     });
     $('#who-slider').liquidSlider({
        autoSlide: true,
        dynamicTabs: false,
        dynamicArrows: true,
+       slideEaseDuration: 600,
     });
     
 });
