@@ -146,7 +146,7 @@
 * .currentCrossLink refers to external crosslinking.
 *******************************************************/
 .ls-wrapper .ls-nav a {
-  background: #d8d8d8;
+  background: transparent;
   color: #333333;
   margin-right: 1px;
   padding: 10px 15px;  
