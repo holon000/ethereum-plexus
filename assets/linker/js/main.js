@@ -110,6 +110,7 @@ $( document ).ready( function() {
     $('#news-slider').liquidSlider({
        autoSlide: false,
        dynamicTabs: true,
+       dynamicArrows: false,
     });
     $('#who-slider').liquidSlider({
        autoSlide: true,
