@@ -417,6 +417,10 @@ img[usemap] {
   color:#fff;
 }
 
+a:focus {
+  color:#333;
+}
+
 a:hover {
   color:#333;
 }
