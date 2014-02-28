@@ -323,6 +323,16 @@ footer {
   border: none;
 }
 
+.timer-wrap-all{
+  display: inherit;
+}
+
+.timer-wrap {
+  display: inline-block;
+  border: none;
+  position: relative;
+}
+
 .timer-unit {
   border: 1px solid #333;
   font-size: 250%;
@@ -331,14 +341,19 @@ footer {
   margin-left: 1ex;
   margin-right: 1ex;
   font-family:RobotoThin !important;
+  display: inline-block;
+  position: relative;
 }
 
 .timer-unit-desc {
-  display: none;
+  position: relative;
+  margin-top: 1em;
+  font-size: 125%;
 }
 
 .timer-unit-sep {
   font-size:250%;
+  display: none;
 }
 
 .squr {
