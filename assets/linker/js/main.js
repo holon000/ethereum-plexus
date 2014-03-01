@@ -136,7 +136,7 @@ $(document).ready(function() {
     slideEaseDuration: 600,
   });
   $('#code-slider').liquidSlider({
-    autoSlide: true,
+    autoSlide: false,
     dynamicTabs: false,
     dynamicArrows: true,
     slideEaseDuration: 600,
