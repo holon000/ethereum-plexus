@@ -75,7 +75,7 @@ footer {
 }
 
 .jumbotron {
-  background: #f5f5f5 url('/images/poster.jpg') no-repeat center center fixed; 
+  background: #f5f5f5 url('/images/poster.jpg') no-repeat center center fixed;
   margin:0;
   padding-bottom:45px;
   padding-top:15px;
@@ -502,6 +502,33 @@ a:hover {
   padding:8px 11px;
   font-size:193%;
 }
+
+/* Pill style */
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  background: #555;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  text-decoration: none;
+  opacity: .8;
+  outline: none;
+  border-width: 0;
+  padding: 10px 20px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-transition: background 200ms linear;
+  -moz-transition: background 200ms linear;
+  transition: background 200ms linear;
+  -webkit-backface-visibility: hidden;
+}
+
+#scrollUp:hover {
+  background: #000;
+}
+
 @media (max-width: 768px) {
   .timer-unit {
     border: 1px solid #333;
@@ -533,11 +560,11 @@ a:hover {
     margin-top: 1ex;
     font-size: 100%;
   }
-  
+
   .fa-8x {
     font-size:500%;
    }
-   
+
    #content-circle {
      width:150px;
      height:150px;
@@ -545,11 +572,11 @@ a:hover {
      margin:0;
      margin-bottom:1em;
    }
-   
+
    #how button.paging {
      top:55px;
    }
-   
+
    button.paging prev {
      margin-left:-65px;
    }
