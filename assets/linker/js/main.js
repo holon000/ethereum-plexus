@@ -130,9 +130,9 @@ $(document).ready(function() {
     autoHeight: true,
   });
   $('#who-slider').liquidSlider({
-    autoSlide: true,
+    autoSlide: false,
     dynamicTabs: false,
-    dynamicArrows: true,
+    dynamicArrows: false,
     slideEaseDuration: 600,
   });
   $('#code-slider').liquidSlider({
