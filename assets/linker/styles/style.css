@@ -53,6 +53,11 @@ footer {
   background-color:#ccc;
 }
 
+.ls-wrapper .ls-nav .current {
+  font-size:130%;
+  padding:7px 10px;
+}
+
 #mc-embedded-subscribe {
   padding:8px 10px;
   border-radius:0;
