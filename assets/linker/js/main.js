@@ -32,7 +32,7 @@ $(document).ready(function() {
     animation: 'fade', // Fade, slide, none
     animationInSpeed: 200, // Animation in speed (ms)
     animationOutSpeed: 200, // Animation out speed (ms)
-    scrollText: 'Back to top', // Text for element, can contain HTML
+    scrollText: '<i class="fa fa-fw fa-caret-up fa-2x">', // Text for element, can contain HTML
     scrollTitle: false, // Set a custom <a> title if required. Defaults to scrollText
     scrollImg: false, // Set true to use image
     activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
