@@ -79,47 +79,47 @@ $(document).ready(function() {
         $(value).addClass('hidden');
       }
     });
-  }
-
-  $('#how button.paging.prev').click(function() {
-    updateFeature(-1)
-  });
-  $('#how button.paging.next').click(function() {
-    updateFeature(1)
-  });
-
-  var updateFeature = function(direction) {
-    //direction should be a positive or negative value to indicate how many elements to walk, i.e. 2 for forwards 2, -1 for backwards
-    var children = $('#content-circle').children();
-    var maxIndex = children.length - 1;
-    var currentIndex = 0;
-
-    // get shown item. does nit handle multiple shown well yet
-    $.each(children, function(index, value) {
-      if ($(value).hasClass('active')) {
-        currentIndex = index;
-        $(value).fadeOut('fast', function() {
-          $(value).removeClass('active');
-          $(children[newIndex]).fadeIn('slow', function() {
-            $(children[newIndex]).addClass('active');
-          });
-        });
-      }
-    });
-
-    var newIndex = currentIndex + direction;
-    if (newIndex <= 0) {
-      newIndex = 0;
-      $('#how button.paging.prev').prop('disabled', true);
-    } else if (newIndex >= maxIndex) {
-      newIndex = maxIndex;
-      $('#how button.paging.next').prop('disabled', true);
-    } else {
-      $('#how button.paging.prev').prop('disabled', false);
-      $('#how button.paging.next').prop('disabled', false);
-    }
-
   };
+
+  (function(){
+    var activeFeatureIndex = 0;
+    var updateFeature = function(direction) {
+      //direction should be a positive or negative value
+      //to indicate how many elements to walk, i.e. 2 for forwards 2, -1 for backwards
+
+      var newActiveFeatureIndex = activeFeatureIndex + direction;
+
+      var children = $('#content-circle').children();
+      var maxIndex = children.length - 1;
+
+      // display prev and next button
+      var disablePrev = newActiveFeatureIndex <= 0;
+      var disableNext = newActiveFeatureIndex >= maxIndex;
+
+      $('#how button.paging.prev').prop('disabled', disablePrev);
+      $('#how button.paging.next').prop('disabled', disableNext);
+
+      // display feature
+      children.eq(activeFeatureIndex).fadeOut('fast', function() {
+        $(this).removeClass('active');
+        children.eq(newActiveFeatureIndex).fadeIn('slow', function(){
+          $(this).addClass('active');
+          activeFeatureIndex = newActiveFeatureIndex;
+        });
+      });
+    };
+
+    $('#content-circle').children().hide();
+    updateFeature(0);
+
+    $('#how button.paging.prev').click(function() {
+      updateFeature(-1);
+    });
+    $('#how button.paging.next').click(function() {
+      updateFeature(1);
+    });
+  }());
+
   $('img[usemap]').rwdImageMaps();
   $(".video-responsive").fitVids();
   $('#news-slider').liquidSlider({
