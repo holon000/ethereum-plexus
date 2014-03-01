@@ -3,8 +3,7 @@ div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
   #code-slider.liquid-slider
     div
       h2.title Difficulty Adjustment
-
-      pre.whatsample
+      p
         code.
           D(genesis_block) = 2^36
           D(block) =
@@ -15,8 +14,7 @@ div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
 
     div
       h2.title Metacoin Protocol
-
-      pre.whatsample
+      p
         code.
           if tx.output[0] != MARKER:
               break
@@ -30,8 +28,7 @@ div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
 
     div
       h2.title Sub-currencies
-
-      pre.whatsample
+      p  
         code.
           if tx.value &lt; 100 * block.basefee:
               stop
@@ -51,8 +48,7 @@ div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
 
     div
       h2.title Data Feed
-
-      pre.whatsample
+      p
         code.
           if tx.sender != FEEDOWNER:
               stop
@@ -60,8 +56,7 @@ div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
 
     div
       h2.title Hedging  Contract
-
-      pre.whatsample
+      p
         code.
           if tx.value &lt; 200 * block.basefee:
               stop
@@ -82,8 +77,7 @@ div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
 
     div
       h2.title Name Registration
-
-      pre.whatsample
+      p
         code.
           if tx.value &lt; block.basefee * 200:
               stop
@@ -93,8 +87,7 @@ div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
 
     div
       h2.title Decentralized Autonomous Organizations
-
-      pre.whatsample
+      p
         code.
           if tx.value &lt; tx.basefee * 200:
               stop
