@@ -53,8 +53,7 @@ footer {
 }
 
 .ls-wrapper .ls-nav .current {
-  font-size:140%;
-  padding:6px 10px;
+  display:none;
 }
 
 #mc-embedded-subscribe {
