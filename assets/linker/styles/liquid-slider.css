@@ -27,7 +27,7 @@
 * markup.
 *******************************************************/
 .ls-wrapper .ls-preloader {  
-  background: url(../img/loading.gif) none no-repeat center 75px;
+  background: url(/images/loading.gif) none no-repeat center 75px;
   opacity:1;
   /* Do not edit below this line */
   width:100%;
@@ -198,7 +198,7 @@
   width: 100%;
   height: 35px;
   overflow: hidden;
-  background: url(../img/menu.png) no-repeat right #ddd;
+  background: url(/images/menu.png) no-repeat right #ddd;
   
 }
 .ls-wrapper .ls-select-box select {  
@@ -258,7 +258,7 @@
 .ls-wrapper .ls-nav-right-arrow {
   width: 25px;
   height: 25px;
-  background: url(../img/arrow.png) no-repeat top right;
+  background: url(/images/arrow.png) no-repeat top right;
   margin-top: 50px;
   margin-right: 5px;
   /* Do not edit below this line */
@@ -267,7 +267,7 @@
 .ls-wrapper .ls-nav-left-arrow {
   width: 25px;
   height: 25px;
-  background: url(../img/arrow.png) no-repeat top left;
+  background: url(/images/arrow.png) no-repeat top left;
   margin-top: 50px;
   margin-left: 5px;
   /* Do not edit below this line */
@@ -275,14 +275,14 @@
 }
 .ls-wrapper .ls-nav-left-arrow:hover {
   /* Left graphical arrows hover */
-  background: url(../img/arrow.png) no-repeat bottom left;
+  background: url(/images/arrow.png) no-repeat bottom left;
 }
 .ls-wrapper .ls-nav-left-arrow:active {
   /* Left graphical arrows click */
 }
 .ls-wrapper .ls-nav-right-arrow:hover {
   /* Right graphical arrows hover */
-  background: url(../img/arrow.png) no-repeat bottom right;
+  background: url(/images/arrow.png) no-repeat bottom right;
 }
 .ls-wrapper .ls-nav-right-arrow:active {
   /* Right graphical arrows click */
