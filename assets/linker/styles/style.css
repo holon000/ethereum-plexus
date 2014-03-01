@@ -48,7 +48,6 @@ footer {
 }
 
 #news-slider-nav-ul > li > a {
-  text-decoration: underline;
   text-transform: lowercase;
   background-color:#ccc;
 }
