@@ -16,13 +16,6 @@ $(document).ready(function() {
     }, 400, 'swing');
   });
 
-  $(".scrolltop").click(function() {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 400, "swing");
-    return false;
-  });
-
   $.scrollUp({
     scrollName: 'scrollUp', // Element ID
     scrollDistance: 300, // Distance from top/bottom before showing element (px)
@@ -126,7 +119,7 @@ $(document).ready(function() {
       $('#how button.paging.next').prop('disabled', false);
     }
 
-  }
+  };
   $('img[usemap]').rwdImageMaps();
   $(".video-responsive").fitVids();
   $('#news-slider').liquidSlider({
@@ -137,10 +130,17 @@ $(document).ready(function() {
     autoHeight: true,
   });
   $('#who-slider').liquidSlider({
-    autoSlide: true,
+    autoSlide: false,
+    dynamicTabs: false,
+    dynamicArrows: false,
+    slideEaseDuration: 600,
+  });
+  $('#code-slider').liquidSlider({
+    autoSlide: false,
     dynamicTabs: false,
     dynamicArrows: true,
     slideEaseDuration: 600,
+    autoHeight: true,
   });
   $('#philosophy-slider').liquidSlider({
     autoSlide: false,
