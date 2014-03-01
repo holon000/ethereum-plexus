@@ -445,6 +445,10 @@ a:hover {
   padding:5px;
 }
 
+#news-right {
+  margin-top: 3.5em;
+}
+
 .news-bottom {
   margin-bottom: 1em;
 }
