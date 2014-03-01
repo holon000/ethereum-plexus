@@ -126,7 +126,7 @@ $(document).ready(function() {
       $('#how button.paging.next').prop('disabled', false);
     }
 
-  }
+  };
   $('img[usemap]').rwdImageMaps();
   $(".video-responsive").fitVids();
   $('#news-slider').liquidSlider({
@@ -141,6 +141,13 @@ $(document).ready(function() {
     dynamicTabs: false,
     dynamicArrows: true,
     slideEaseDuration: 600,
+  });
+  $('#code-slider').liquidSlider({
+    autoSlide: true,
+    dynamicTabs: false,
+    dynamicArrows: true,
+    slideEaseDuration: 600,
+    autoHeight: true,
   });
   $('#philosophy-slider').liquidSlider({
     autoSlide: false,
