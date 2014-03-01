@@ -16,13 +16,6 @@ $(document).ready(function() {
     }, 400, 'swing');
   });
 
-  $(".scrolltop").click(function() {
-    $("html, body").animate({
-      scrollTop: 0
-    }, 400, "swing");
-    return false;
-  });
-
   $.scrollUp({
     scrollName: 'scrollUp', // Element ID
     scrollDistance: 300, // Distance from top/bottom before showing element (px)
