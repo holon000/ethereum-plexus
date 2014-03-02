@@ -47,6 +47,10 @@ footer {
   margin-top:-60px;
 }
 
+#social {
+  padding-top: 10px;
+}
+
 #news-slider-nav-ul > li > a {
   text-transform: lowercase;
   background-color:#ccc;
