@@ -1,16 +1,27 @@
 div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
 
   #code-slider.liquid-slider
+    //- div
+    //-   h2.title Difficulty Adjustment      
+    //-   pre  
+    //-     code.
+    //-       D(genesis_block) = 2^36
+    //-       D(block) =
+    //-           if anc(block,1).timestamp &gt;= anc(block,501).timestamp + 60 * 500:
+    //-                D(block.parent) - floor(D(block.parent) / 1000)
+    //-           else:
+    //-               D(block.parent) + floor(D(block.parent) / 1000)
+
     div
-      h2.title Difficulty Adjustment      
-      pre  
+      h2.title Name Registration
+      pre
         code.
-          D(genesis_block) = 2^36
-          D(block) =
-              if anc(block,1).timestamp &gt;= anc(block,501).timestamp + 60 * 500:
-                   D(block.parent) - floor(D(block.parent) / 1000)
-              else:
-                  D(block.parent) + floor(D(block.parent) / 1000)
+          if tx.value &lt; block.basefee * 200:
+              stop
+          if contract.storage[tx.data[0]] or tx.data[0] &lt; 100:
+              stop
+          contract.storage[tx.data[0]] = tx.data[1]
+
 
     div
       h2.title Metacoin Protocol
@@ -75,15 +86,7 @@ div#what-left.pull-left.col-xs-12.col-sm-12.col-md-6
                   mktx(contract.storage[1003],ethervalue * 10^18,0,0)
                   mktx(A,(5000 - ethervalue) * 10^18,0,0)
 
-    div
-      h2.title Name Registration
-      pre
-        code.
-          if tx.value &lt; block.basefee * 200:
-              stop
-          if contract.storage[tx.data[0]] or tx.data[0] &lt; 100:
-              stop
-          contract.storage[tx.data[0]] = tx.data[1]
+
 
     div
       h2.title Decentralized Autonomous Organizations
