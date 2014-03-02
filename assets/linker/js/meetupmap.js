@@ -22,7 +22,7 @@ $(document).ready(function() {
   d3.json("./d3data/world.json", function(error, topology) {
 
     // load and display the cities
-    d3.csv("./d3data/cities.csv", function(error, data) {
+    d3.csv("./d3data/cities.txt", function(error, data) {
         g.selectAll("circle")
           .data(data)
           .enter()
