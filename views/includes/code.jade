@@ -1,6 +1,6 @@
 #code-slider.liquid-slider
   //- div
-  //-   h2.title Difficulty Adjustment      
+  //-   h4.title Difficulty Adjustment      
   //-   pre  
   //-     code.
   //-       D(genesis_block) = 2^36
@@ -11,7 +11,7 @@
   //-               D(block.parent) + floor(D(block.parent) / 1000)
 
   div
-    h2.title Name Registration
+    h4.title Name Registration
     pre
       code.
         if tx.value &lt; block.basefee * 200:
@@ -22,7 +22,7 @@
 
 
   div
-    h2.title Metacoin Protocol
+    h4.title Metacoin Protocol
     pre
       code.
         if tx.output[0] != MARKER:
@@ -36,7 +36,7 @@
             balance[tx.output[2]] += decode_value(tx.output[3]);
 
   div
-    h2.title Sub-currencies
+    h4.title Sub-currencies
     pre  
       code.
         if tx.value &lt; 100 * block.basefee:
@@ -56,7 +56,7 @@
             contract.storage[1000] = 1
 
   div
-    h2.title Data Feed
+    h4.title Data Feed
     pre
       code.
         if tx.sender != FEEDOWNER:
@@ -64,7 +64,7 @@
         contract.storage[data[0]] = data[1]
 
   div
-    h2.title Hedging  Contract
+    h4.title Hedging Contract
     pre
       code.
         if tx.value &lt; 200 * block.basefee:
@@ -87,7 +87,7 @@
 
 
   div
-    h2.title Decentralized Autonomous Organizations
+    h4.title Decentralized Autonomous Organizations
     pre
       code.
         if tx.value &lt; tx.basefee * 200:
