@@ -507,10 +507,10 @@ a:hover {
   opacity: .8;
   outline: none;
   border-width: 0;
-  padding: 10px 20px;
+  padding: 10px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
-  border-radius: 16px;
+  border-radius: 0px;
   -webkit-transition: background 200ms linear;
   -moz-transition: background 200ms linear;
   transition: background 200ms linear;
