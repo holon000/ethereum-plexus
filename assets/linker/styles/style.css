@@ -5,8 +5,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform:lowercase;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-bottom:10px;
+  margin-top:5px;
 }
 
 a {
@@ -45,10 +45,6 @@ footer {
   padding-top:10px;
   padding-bottom:20px;
   margin-top:-60px;
-}
-
-#social {
-  padding-top: 10px;
 }
 
 #news-slider-nav-ul > li > a {
@@ -323,16 +319,6 @@ footer {
   padding-bottom: 1em;
 }
 
-#code-slider pre {
-  background-color: transparent; 
-  border: none; 
-  border-radius: 0; 
-}
-
-#code-slider h4 {
-  text-align: right;
-}
-
 .whatsample {
   font-size: 110%;
   line-height: 125%;
@@ -460,10 +446,6 @@ a:hover {
 
 .video-responsive {
   padding:5px;
-}
-
-#news-right {
-  margin-top: 3.5em;
 }
 
 .news-bottom {
