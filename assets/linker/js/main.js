@@ -109,7 +109,7 @@ $(document).ready(function() {
       });
     };
 
-    $('#content-circle').children().hide();
+    $('#content-circle').children().removeClass('active');
     updateFeature(0);
 
     $('#how button.paging.prev').click(function() {
