@@ -259,7 +259,7 @@
   width: 25px;
   height: 25px;
   background: url(/images/arrow.png) no-repeat top right;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-right: 5px;
   /* Do not edit below this line */
   position:relative;
@@ -268,7 +268,7 @@
   width: 25px;
   height: 25px;
   background: url(/images/arrow.png) no-repeat top left;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left: 5px;
   /* Do not edit below this line */
   position:relative;
