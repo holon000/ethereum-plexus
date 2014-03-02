@@ -5,8 +5,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-transform:lowercase;
-  margin-bottom:10px;
-  margin-top:5px;
+  margin-bottom:1em;
+  margin-top:1em;
 }
 
 a {
@@ -228,10 +228,6 @@ footer {
   background-image:url('/images/slice.png');
 }
 
-#what-left {
-  margin-top:60px;
-}
-
 #why-content {
   background-color:transparent;
 }
@@ -380,6 +376,17 @@ footer {
   display: inline-block;
 }
 
+#code-slider pre {
+   background-color: transparent; 
+   border: none; 
+   border-radius: 0; 
+ }
+ 
+ #code-slider h4 {
+   text-align: right;
+ }
+
+
 .fa-8x {
   font-size: 900%;
 }
@@ -452,10 +459,6 @@ a:hover {
   padding:5px;
 }
 
-#news-right {
-  margin-top: 3.5em;
-}
-
 .news-bottom {
   margin-bottom: 1em;
 }
@@ -515,10 +518,10 @@ a:hover {
   opacity: .8;
   outline: none;
   border-width: 0;
-  padding: 10px 20px;
+  padding: 10px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
-  border-radius: 16px;
+  border-radius: 0px;
   -webkit-transition: background 200ms linear;
   -moz-transition: background 200ms linear;
   transition: background 200ms linear;
