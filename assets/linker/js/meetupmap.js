@@ -19,10 +19,10 @@ $(document).ready(function() {
   
 
   // load and display the World
-  d3.json("./d3data/world.json", function(error, topology) {
+  d3.json("./static/world.json", function(error, topology) {
 
     // load and display the cities
-    d3.csv("./d3data/cities.txt", function(error, data) {
+    d3.csv("./static/cities.txt", function(error, data) {
         g.selectAll("circle")
           .data(data)
           .enter()
