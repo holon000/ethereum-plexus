@@ -39,48 +39,6 @@ $(document).ready(function() {
     layout: '<div class ="timer-wrap-all"><div class="timer-wrap"> <span class="timer-unit">{dnn}</span> <div class="timer-unit-desc">{dl}</div> </div> <div class="timer-wrap"> <span class="timer-unit-sep">:</span> </div> <div class="timer-wrap"> <span class="timer-unit">{hnn}</span> <div class="timer-unit-desc">{hl}</div> </div> <div class="timer-wrap"> <span class="timer-unit-sep">:</span> </div> <div class ="timer-wrap"> <span class="timer-unit">{mnn}</span> <div class="timer-unit-desc">{ml}</div> </div> <div class="timer-wrap"> <span class="timer-unit-sep">:</span> </div> <div class="timer-wrap"> <span class="timer-unit">{snn}</span> <div class="timer-unit-desc">{sl}</div> </div></div>',
   });
 
-  var map = $('#philoimg');
-  var inArea = false;
-  var single_opts = {};
-  var all_opts = {};
-  var initial_opts = {
-    mapKey: 'data-name',
-    isSelectable: false,
-    onMouseover: function(data) {
-      inArea = true;
-      var target = '#' + data.key;
-      setChildrenHidden('#philotexts');
-      $(target).fadeToggle(700).removeClass('hidden');
-    },
-    onMouseout: function(data) {
-      inArea = false;
-    }
-  };
-  opts = $.extend({}, all_opts, initial_opts, single_opts);
-  map.mapster('unbind')
-    .mapster(opts)
-    .bind('mouseover', function() {
-      if (!inArea) {
-        map.mapster('set_options', all_opts)
-          .mapster('set', true, 'all')
-          .mapster('set_options', single_opts);
-      }
-    }).bind('mouseout', function() {
-      if (!inArea) {
-        map.mapster('set', false, 'all');
-      }
-
-    });
-
-  var setChildrenHidden = function(selector) {
-    var children = $(selector).children();
-    $.each(children, function(index, value) {
-      if (!$(value).hasClass('hidden')) {
-        $(value).addClass('hidden');
-      }
-    });
-  };
-
   (function(){
     var activeFeatureIndex = 0;
     var updateFeature = function(direction) {
@@ -120,7 +78,7 @@ $(document).ready(function() {
     });
   }());
 
-  $('img[usemap]').rwdImageMaps();
+
   $(".video-responsive").fitVids();
   $('#news-slider').liquidSlider({
     autoSlide: false,
