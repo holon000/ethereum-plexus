@@ -19,10 +19,10 @@ $(document).ready(function() {
   
 
   // load and display the World
-  d3.json("./static/world.json", function(error, topology) {
+  d3.json("./static/d3data/world.json", function(error, topology) {
 
     // load and display the cities
-    d3.csv("./static/cities.txt", function(error, data) {
+    d3.csv("./static/d3data/cities.txt", function(error, data) {
         g.selectAll("circle")
           .data(data)
           .enter()
@@ -39,10 +39,10 @@ $(document).ready(function() {
           .append("circle")
             .attr("cx", function(d) { return projection([d.lon, d.lat])[0]; })
             .attr("cy", function(d) { return projection([d.lon, d.lat])[1]; })
-            .attr("r", 4)
-            .style("stroke", "black")
+            .attr("r", 5)
+            .style("stroke", "white")
             .style("stroke-width", 1)
-            .style("fill", "red")
+            .style("fill", "#aab5de")
             .call(
               d3.helper.tooltip()
                 .attr({'class': 'meetup-tooltip'})
@@ -69,7 +69,7 @@ $(document).ready(function() {
         g.selectAll("path")  
           .attr("d", path.projection(projection));
         g.selectAll("circle")
-          .attr("r", 4 / d3.event.scale )
+          .attr("r", 5 / d3.event.scale )
           .style("stroke-width", 1 / d3.event.scale);
   });
 
