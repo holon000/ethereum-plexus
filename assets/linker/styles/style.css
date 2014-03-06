@@ -110,6 +110,14 @@ footer {
   z-index:100;
 }
 
+.navbar-default .navbar-nav>li>a {
+  color:#333;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color:#777;
+}
+
 .navbar {
   border:none;
   margin-bottom:0;
@@ -371,7 +379,7 @@ footer {
   height: 0; 
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
-  border-bottom: 35px solid white;
+  border-bottom: 55px solid white;
   margin-left:auto;
   margin-right:auto;
   margin-top:-6em;
