@@ -45,7 +45,7 @@ $(function() {
 			(adjSize = function() { // Create function called adjSize
 							
 				$width = $(window).width(); // Width of the screen
-				$height = $(window).height() - 240; // Height of the screen
+				$height = $(window).height() - 200; // Height of the screen
 							
 				$boxRatio = $width / $height; // The ratio the screen is in
 							
