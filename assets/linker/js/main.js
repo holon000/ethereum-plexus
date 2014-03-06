@@ -40,32 +40,33 @@ $(function() {
   });
 
 
-  var activeFeatureIndex = 0;
-  var updateFeature = function(direction) {
-    //direction should be a positive or negative value
-    //to indicate how many elements to walk, i.e. 2 for forwards 2, -1 for backwards
+  (function(){
+    var activeFeatureIndex = 0;
+    var updateFeature = function(direction) {
+      //direction should be a positive or negative value
+      //to indicate how many elements to walk, i.e. 2 for forwards 2, -1 for backwards
 
-    var newActiveFeatureIndex = activeFeatureIndex + direction;
+      var newActiveFeatureIndex = activeFeatureIndex + direction;
 
-    var children = $('#content-circle').children();
-    var maxIndex = children.length - 1;
+      var children = $('#content-circle').children();
+      var maxIndex = children.length - 1;
 
-    // display prev and next button
-    var disablePrev = newActiveFeatureIndex <= 0;
-    var disableNext = newActiveFeatureIndex >= maxIndex;
+      // display prev and next button
+      var disablePrev = newActiveFeatureIndex <= 0;
+      var disableNext = newActiveFeatureIndex >= maxIndex;
 
-    $('#how button.paging.prev').prop('disabled', disablePrev);
-    $('#how button.paging.next').prop('disabled', disableNext);
+      $('#how button.paging.prev').prop('disabled', disablePrev);
+      $('#how button.paging.next').prop('disabled', disableNext);
 
-    // display feature
-    children.eq(activeFeatureIndex).fadeOut('fast', function() {
-      $(this).removeClass('active');
-      children.eq(newActiveFeatureIndex).fadeIn('slow', function(){
-        $(this).addClass('active');
-        activeFeatureIndex = newActiveFeatureIndex;
+      // display feature
+      children.eq(activeFeatureIndex).fadeOut('fast', function() {
+        $(this).removeClass('active');
+        children.eq(newActiveFeatureIndex).fadeIn('slow', function(){
+          $(this).addClass('active');
+          activeFeatureIndex = newActiveFeatureIndex;
+        });
       });
-    });
-
+    };
 
     $('#content-circle').children().removeClass('active');
     updateFeature(0);
@@ -76,7 +77,7 @@ $(function() {
     $('#how button.paging.next').click(function() {
       updateFeature(1);
     });
-  }
+  }());
 
 
   $(".video-responsive").fitVids();
