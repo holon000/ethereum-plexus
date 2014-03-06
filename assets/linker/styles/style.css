@@ -28,13 +28,6 @@ footer {
   padding-top: 1em;
 }
 
-hr.thin {
-  height: 1px;
-  background: black;
-  width: 100%;
-  font-size: 1px; /* IE 6 */
-  overflow: hidden; /* IE 6 */
-}
 
 #maincontent > div {
   max-width:900px;
@@ -195,6 +188,11 @@ hr.thin {
   border-color: #a0aef0;
   background-color: #fff;
   border-radius: 0;
+}
+
+
+.hr {
+  border-bottom: 1px solid #494949;
 }
 
 .list-inline > li {
@@ -526,7 +524,7 @@ a:hover {
 }
 
 #apps-examples {
-  margin-top: 3em !important;
+  margin: 3em !important;
   font-size: 150%;
 }
 
@@ -535,15 +533,18 @@ a:hover {
   margin-bottom: 2em;
 }
 
-#apps-examples > img {
-  margin: 1em;
+#apps-examples .hr {
+  padding-bottom: 4ex;
+}
+
+#apps-examples img {
+  padding-top: 2ex;
 }
 
 #apps-examples .apps {
   background-image: url('/images/app-examples.png');
   width: 873px;
   height: 242px;
-  margin: 0 3em 0 3em;
 }
 
 /* Pill style */
@@ -642,4 +643,3 @@ a:hover {
     overflow-x: hidden;
  }
 }
-
