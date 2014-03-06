@@ -28,11 +28,7 @@ footer {
   padding-top: 1em;
 }
 
-#maincontent > div {
-  max-width:900px;
-  margin:0 auto;
-  padding-top:30px;
-}
+
 
 .maincontent {
   background-image:url('/images/bg-img.jpg');
