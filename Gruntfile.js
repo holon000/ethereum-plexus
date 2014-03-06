@@ -69,8 +69,6 @@ module.exports = function (grunt) {
     'linker/js/jquery-2.1.0.min.js',
     'linker/js/bootstrap.min.js',
     'linker/js/jquery.countdown.min.js',
-    'linker/js/jquery.imagemapster.min.js',
-    'linker/js/jquery.rwdImageMaps.js',
     'linker/js/jquery.fitvids.js',
     'linker/js/jquery.liquid-slider-custom.min.js',
     'linker/js/jquery.easing.1.3.js',
