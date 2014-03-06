@@ -1,41 +1,47 @@
-div.text-center.col-xs-12.col-sm-7.col-md-6
-  div.button-previous
-    button.paging.prev(type='button')
-      i.fa.fa-fw.fa-angle-left.fa-3x
-  div#content-circle
-    span
-      i.fa.fa-fw.fa-money.fa-8x
-      p Create a Currency
-    span
-      i.fa.fa-fw.fa-briefcase.fa-8x
-      p Savings Wallet
-    span
-      i.fa.fa-fw.fa-sitemap.fa-8x
-      p Financial Derivatives
-    span
-      i.fa.fa-fw.fa-asterisk.fa-8x
-      p Decentralized Organizations
-    span
-      i.fa.fa-fw.fa-pencil-square-o.fa-8x
-      p Name Registration
-    span
-      i.fa.fa-fw.fa-lock.fa-8x
-      p Data storage
-  button.paging.next(type='button')
-    i.fa.fa-fw.fa-angle-right.fa-3x
+div.row
+  div.col-sm-6.col-sm-offset-6
+    h2 What can you make out of ether?
 
 
-div#what-make.col-xs-12.col-sm-5.col-md-6
-  h2 What can you make out of ether?
-  :markdown
-    Contracts are the main building block of Ethereum.
-    A contract is like a computer program that lives inside the Ethereum network and has its own ether balance, memory and code.
-    Every time you send a transaction to a contract, the contract executes its code, which can store data, send transactions and even interact with other contracts.
-    You can use contracts to issue currencies, construct your own escrow contracts or financial derivatives, and even create on-blockchain data stores.
-    Thanks to Turing-completeness, Ethereum contracts let you create self-enforcing smart contracts with any conditions that can be mathematically defined.
-    You can find out more in [the whitepaper](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-White-Paper).
+div.row.text-center
+  div.col-sm-6
+    div.button-previous
+      button.paging.prev(type='button')
+        i.fa.fa-fw.fa-angle-left.fa-3x
+    div#content-circle
+      span
+        i.fa.fa-fw.fa-money.fa-8x
+        p Create a Currency
+      span
+        i.fa.fa-fw.fa-briefcase.fa-8x
+        p Savings Wallet
+      span
+        i.fa.fa-fw.fa-sitemap.fa-8x
+        p Financial Derivatives
+      span
+        i.fa.fa-fw.fa-asterisk.fa-8x
+        p Decentralized Organizations
+      span
+        i.fa.fa-fw.fa-pencil-square-o.fa-8x
+        p Name Registration
+      span
+        i.fa.fa-fw.fa-lock.fa-8x
+        p Data storage
+    button.paging.next(type='button')
+      i.fa.fa-fw.fa-angle-right.fa-3x
 
-div#apps-examples.text-center
+
+  div#what-make.col-sm-6.text-right
+    p
+      :markdown
+        Contracts are the main building block of Ethereum.
+        A contract is like a computer program that lives inside the Ethereum network and has its own ether balance, memory and code.
+        Every time you send a transaction to a contract, the contract executes its code, which can store data, send transactions and even interact with other contracts.
+        You can use contracts to issue currencies, construct your own escrow contracts or financial derivatives, and even create on-blockchain data stores.
+        Thanks to Turing-completeness, Ethereum contracts let you create self-enforcing smart contracts with any conditions that can be mathematically defined.
+        You can find out more in [the whitepaper](https://github.com/ethereum/wiki/wiki/%5BEnglish%5D-White-Paper).
+
+div#apps-examples.row.text-center
   h4
     strong open source, one click app install.
   div.apps.row.hr

@@ -519,12 +519,7 @@ a:hover {
   font-size:193%;
 }
 
-#what-make {
-  margin-bottom: 3em;
-}
-
 #apps-examples {
-  /*margin: 3em !important;*/
   font-size: 150%;
 }
 
@@ -537,10 +532,6 @@ a:hover {
   vertical-align: text-bottom;
 }
 
-/*#apps-example ul {
-  display: inline;
-}
-*/
 #apps-examples li {
   background: url(/images/appicon.png) no-repeat;
   font-size: 50%;
@@ -557,6 +548,13 @@ a:hover {
   max-height: 20px;
   min-height: 20px;
   /*border: 1px solid blue;*/
+}
+#apps-examples .apps {
+  margin-top: -1em;
+}
+
+#apps-examples > h4 {
+  padding: 4em 0 0 0;
 }
 
 .dragapp {
