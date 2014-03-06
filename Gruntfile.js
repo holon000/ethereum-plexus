@@ -67,14 +67,25 @@ module.exports = function (grunt) {
 
     // All of the rest of your app scripts imported here
     'linker/js/jquery-2.1.0.min.js',
-    'linker/js/bootstrap.min.js',
     'linker/js/jquery.countdown.min.js',
     'linker/js/jquery.fitvids.js',
-    'linker/js/jquery.liquid-slider-custom.min.js',
     'linker/js/jquery.easing.1.3.js',
+    'linker/js/jquery.fitvids.js',
+    'linker/js/jquery.scrollUp.min.js',
+    'linker/js/jquery.touchSwipe.min.js',
+    'linker/js/jquery.liquid-slider-custom.min.js',
+    'linker/js/d3.min.js',
+    'linker/js/d3_tooltip.js',
+
+    'linker/js/topojson.v1.min.js',
+    'linker/js/meetupmap.js',
     'linker/js/video-background.js',
+    'linker/js/bootstrap.min.js',
     'linker/js/main.js',
-    'linker/**/*.js'
+
+    // DO NOT USE. INSERT STATIC PATH ABOVE
+    // Uncommenting the line below will result in revoking push access
+    // 'linker/**/*.js'
   ];
 
 
