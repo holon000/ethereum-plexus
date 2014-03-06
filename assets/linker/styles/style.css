@@ -534,17 +534,22 @@ a:hover {
 }
 
 #apps-examples .hr {
-  padding-bottom: 4ex;
+  padding-bottom: 3.5ex;
 }
 
 #apps-examples img {
-  padding-top: 2ex;
+  padding: 0 1ex 0 1ex;
+  vertical-align: text-bottom;
 }
 
 #apps-examples .apps {
   background-image: url('/images/app-examples.png');
   width: 873px;
   height: 242px;
+}
+
+.huge {
+  font-size: 300%;
 }
 
 /* Pill style */
