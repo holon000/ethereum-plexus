@@ -204,6 +204,7 @@ footer {
   padding:0;
   top:-60px;
   margin-top:-60px;
+  z-index:-100;
 }
 
 #feature .video-content {
@@ -373,7 +374,9 @@ footer {
   border-bottom: 35px solid white;
   margin-left:auto;
   margin-right:auto;
-  margin-top:-15px;
+  margin-top:-6em;
+  margin-bottom:4em;
+  z-index:100;
 }
 
 #content-circle {
