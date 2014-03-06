@@ -524,17 +524,12 @@ a:hover {
 }
 
 #apps-examples {
-  margin: 3em !important;
+  /*margin: 3em !important;*/
   font-size: 150%;
 }
 
-#apps-examples .reference-clients {
-  margin-top: -5ex;
-  margin-bottom: 2em;
-}
-
 #apps-examples .hr {
-  padding-bottom: 3.5ex;
+  padding: 2ex;
 }
 
 #apps-examples img {
@@ -542,14 +537,47 @@ a:hover {
   vertical-align: text-bottom;
 }
 
-#apps-examples .apps {
-  background-image: url('/images/app-examples.png');
-  width: 873px;
-  height: 242px;
+/*#apps-example ul {
+  display: inline;
+}
+*/
+#apps-examples li {
+  background: url(/images/appicon.png) no-repeat;
+  font-size: 50%;
+  width: 60px;
+  height: 80px;
+  margin: 1ex;
+}
+
+#apps-examples ul > li > span {
+  position: relative;
+  top: 60px;
+  display: block;
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  /*border: 1px solid blue;*/
+}
+
+.dragapp {
+  margin: 1px solid green;
+  background: url(/images/appicon-drag.png) no-repeat;
+}
+
+.custom-app {
+  background: url(/images/custom-app.png) no-repeat;
+}
+
+.html-css-js {
+  background: url(/images/html-css-js.png) no-repeat;
 }
 
 .huge {
   font-size: 300%;
+}
+
+.inline-block {
+  display: inline-block
 }
 
 /* Pill style */

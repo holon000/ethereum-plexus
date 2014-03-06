@@ -38,13 +38,34 @@ div#what-make.col-xs-12.col-sm-5.col-md-6
 div#apps-examples.text-center
   h4
     strong open source, one click app install.
-  p.apps
-    span.sr-only law, cloud storage, prediction markets, trading, decentralized hosting, your own currency, make your own, html5, css3, js
-  p.hr.reference-clients Mobile &amp; desktop reference clients.
-  p.hr Turing complete contracts on a blockhain.
-  p
+  div.apps.row.hr
+    //- span.dragapp
+    ul.list-inline
+      li
+        span law
+      li
+        span cloud storage
+      li
+        span prediction markets
+      li
+        span trading
+      li
+        span decentralized hosting
+      li
+        span your own currency
+    p &mdash; or &mdash;
+    div.text-center.nowrap
+      div.inline-block
+        img(src='/images/custom-app.png',alt='make your own')
+        span.clearfix make your own
+      div.inline-block
+        img(src='/images/html-css-js.png',alt='HTML5 CSS3 JS')
+      //- span.sr-only law, cloud storage, prediction markets, trading, decentralized hosting, your own currency, make your own, html5, css3, js
+  div.row.hr.reference-clients Mobile &amp; desktop reference clients.
+  div.row.hr Turing complete contracts on a blockhain.
+  div.row
     img(src='/images/cpp-logo.png', alt="C++")
     img(src='/images/go-gopher.png', alt="Go")
     img(src='/images/python-logo.png', alt="Python")
     span.huge &hellip;
-  span flexible implementations.
+  div.row flexible implementations.
