@@ -26,6 +26,9 @@ $(document).ready(function() {
         g.selectAll(".point")
           .data(data)
           .enter()
+          .append("a")
+            .attr("xlink:href", function(d) { return d.url; })
+            .attr("xlink:show", "new")
           .append("circle")
             .attr("cx", function(d) { return projection([d.lon, d.lat])[0]; })
             .attr("cy", function(d) { return projection([d.lon, d.lat])[1]; })
@@ -38,8 +41,6 @@ $(document).ready(function() {
                 .attr({'class': 'meetup-tooltip'})
                 .text(function(d) { return d.city; })
             );
-          // .append("svg:title")
-          //   .text(function(d) { return d.city; });
     });
 
 
