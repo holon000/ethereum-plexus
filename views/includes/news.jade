@@ -1,7 +1,7 @@
 div#news-left.pull-left.col-xs-12.col-md-8
   div.news-top
     div.news-top-left.pull-left.text-left.col-xs-4.col-sm-6.col-md-6
-      h2 media
+      h2 news
 
 
   div.news-bottom
@@ -13,35 +13,45 @@ div#news-left.pull-left.col-xs-12.col-md-8
             iframe(src='//player.vimeo.com/video/87131363?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
 
         div.text-left
+          h3.title Status
+          p
+            h4 Ether Sale
+            p We have not yet announced the date nor the terms of our upcoming Ether sale. 
+            p We will do so via our twitter feed, this blog and all our other social channels.  
+
+            h4 Release date and Mining
+            p We expect to launch our live mainnet in Q4 2014. All Ether generated on the testnet is 'play Ether' and is reset regularly to prevent its resale. 
+
+            h4 Client downloads
+            p The current clients available on this site are purely proofs of concept intended for an advanced technical audience. They do not reflect the final UI of our reference clients.
+
+
+        div.text-left
           h3.title Twitter
           p
             include twitter.html
 
-        //-div.text-left
-          //-h3.title Status
-          //-p
-            //-include twitter.html
 
-        //-div.text-left
-          //-h3.title Videos
-          //-p  
-              //-div.col-xs-6
-                //-div.video-responsive
-                  //-p
-                    //-iframe(src='//player.vimeo.com/video/87131363?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
-              //-div.col-xs-6
-                //-div.video-responsive
-                  //-p
-                    //-iframe(src='//player.vimeo.com/video/87131363?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
+        div.text-left
+          h3.title Videos
+          p  
+              div.col-xs-6
+                div.video-responsive
+                  p
+                    iframe(src='//www.youtube.com/embed/l9dpjN3Mwps',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
+              div.col-xs-6
+                div.video-responsive
+                  p
+                    iframe(src='//www.youtube.com/embed/PoqKa1r83cM',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
 
-              //-div.col-xs-6
-                //-div.video-responsive
-                  //-p
-                    //-iframe(src='//player.vimeo.com/video/87131363?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
-              //-div.col-xs-6
-                //-div.video-responsive
-                  //-p
-                    //-iframe(src='//player.vimeo.com/video/87131363?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
+              div.col-xs-6
+                div.video-responsive
+                  p
+                    iframe(src='//www.youtube.com/embed/4NZCWABWplE',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
+              div.col-xs-6
+                div.video-responsive
+                  p
+                    iframe(src='//player.vimeo.com/video/87131363?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0',width='700',height='394',frameborder='0',webkitallowfullscreen=true,mozallowfullscreen=true,allowfullscreen=true)
 
         div.text-left
           h3.title Links
@@ -76,6 +86,16 @@ div#news-left.pull-left.col-xs-12.col-md-8
                     div
                     :markdown
                       Facebook
+
+                  a(href='https://www.youtube.com/user/ethereumproject',title='YouTube')
+                    div
+                    :markdown
+                      YouTube
+
+                  a(href='http://www.reddit.com/r/ethereum',title='Reddit')
+                    div
+                    :markdown
+                      Reddit
            
                   a(href='http://ethereum.meetup.com',title='Meetups')
                     div
@@ -84,23 +104,32 @@ div#news-left.pull-left.col-xs-12.col-md-8
 
           div.col-xs-6.text-left
 
-
-                  a(href='http://j.mp/ethereum_go_faq', title='Meetups')
+                  a(href='http://forum.ethereum.org/discussion/338/general-faq/p1', title='General FAQ')
                     div
                     :markdown
-                      GoLang FAQ
+                      General FAQ
 
-                  a(href='http://j.mp/ethereum_cpp_faq',title='Meetups')
+                  a(href='http://forum.ethereum.org/discussion/505/writing-smart-contracts-faq-live-updates/p1', title='Smart Contracts')
                     div
                     :markdown
-                      C++ FAQ            
+                      Writing Smart Contracts FAQ
 
-                  a(href='http://j.mp/ethereum_presale_faq',title='Meetups')
+                  a(href='http://forum.ethereum.org/discussion/305/go-code-build-faq/p1', title='GoLang')
                     div
                     :markdown
-                      Ether FAQ
+                      GoLang code and Build FAQ
+
+                  a(href='http://forum.ethereum.org/discussion/170/c-code-build-faq/p1', title='C++')
+                    div
+                    :markdown
+                      C++ code and Build FAQ
+
+                  a(href='http://forum.ethereum.org/discussion/171/meetup-faq-live-updates/p1', title='Meetups')
+                    div
+                    :markdown
+                      Meetup FAQ
                       
-                  a(href='j.mp/ethereum_mining_faq',title='Meetups')
+                  a(href='http://forum.ethereum.org/discussion/197/mining-faq-live-updates',title='Meetups')
                     div
                     :markdown
                       Mining FAQ 
@@ -108,7 +137,7 @@ div#news-left.pull-left.col-xs-12.col-md-8
 div#news-right.pull-right.col-xs-12.col-md-4
   h2 download
   :markdown
-    Proof of concept client #3
+    Proof of Concept client #3
 
   div.dl-box
     div.dl-row1.col-xs-12

@@ -48,6 +48,10 @@ footer {
   background-color:#ccc;
 }
 
+#news-slider {  
+  margin-top: 20px;
+}
+
 .ls-wrapper .ls-nav .current {
   font-weight:bold;
 }

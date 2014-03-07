@@ -84,9 +84,11 @@ $(function() {
   $('#news-slider').liquidSlider({
     autoSlide: false,
     dynamicTabs: true,
+    dynamicTabsHtml: true,
     dynamicArrows: false,
     slideEaseDuration: 600,
     autoHeight: true,
+    includeTitle: false
   });
   $('#who-slider').liquidSlider({
     autoSlide: false,
