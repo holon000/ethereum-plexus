@@ -58,6 +58,15 @@ footer {
   background-color:#c5c5c5 !important;
 }
 
+.ls-responsive .ls-nav-left a, .ls-responsive .ls-nav-right a {
+  background-color: transparent;
+  color: #9A9A9A;
+}
+.ls-responsive .ls-nav-right a:hover, .ls-responsive .ls-nav-right a:hover {
+  background-color: transparent;
+  color: #333;
+}
+
 .news-top-left {
   padding:0;
 }
