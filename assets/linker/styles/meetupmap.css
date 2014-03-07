@@ -2,11 +2,18 @@
   padding-top: 20px;
 }
 
-path {
+/*path {
   stroke: white;
   stroke-width: 0.25px;
-  fill: grey;
+  fill: #CDCDCD;
+}*/
+
+path {
+  stroke: black;
+  stroke-width: 0.25px;
+  fill: white;
 }
+
 
 .meetup-tooltip {
   text-align: center;

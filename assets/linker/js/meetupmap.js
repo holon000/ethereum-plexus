@@ -40,7 +40,7 @@ $(document).ready(function() {
             .attr("cx", function(d) { return projection([d.lon, d.lat])[0]; })
             .attr("cy", function(d) { return projection([d.lon, d.lat])[1]; })
             .attr("r", 5)
-            .style("stroke", "white")
+            .style("stroke", "black")
             .style("stroke-width", 1)
             .style("fill", "#aab5de")
             .call(
