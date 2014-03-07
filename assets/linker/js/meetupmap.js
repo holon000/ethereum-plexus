@@ -23,19 +23,9 @@ $(document).ready(function() {
 
     // load and display the cities
     d3.csv("./static/meetup-cities.csv", function(error, data) {
-        g.selectAll("circle")
+        g.selectAll(".point")
           .data(data)
           .enter()
-          .append("a")
-            .attr("xlink:href", function(d) { return d.url; })
-            .attr("xlink:show", "new")
-          // .append("svg:image")
-          //   .attr("xlink:href", "./images/d3meetupmapmarker.png")
-          //   .attr("width", 7)
-          //   .attr("height", 10)
-          //   .attr("x", function(d) { return projection([d.lon, d.lat])[0]; })
-          //   .attr("y", function(d) { return projection([d.lon, d.lat])[1]; })
-          //   .attr("transform", "translate(-3,-5)");
           .append("circle")
             .attr("cx", function(d) { return projection([d.lon, d.lat])[0]; })
             .attr("cy", function(d) { return projection([d.lon, d.lat])[1]; })
@@ -47,9 +37,9 @@ $(document).ready(function() {
               d3.helper.tooltip()
                 .attr({'class': 'meetup-tooltip'})
                 .text(function(d) { return d.city; })
-            )
-          .append("svg:title")
-            .text(function(d) { return d.city; });
+            );
+          // .append("svg:title")
+          //   .text(function(d) { return d.city; });
     });
 
 
@@ -63,7 +53,7 @@ $(document).ready(function() {
 
   // zoom and pan
   var zoom = d3.behavior.zoom()
-    .scaleExtent([1, 15])
+    .scaleExtent([1, 5])
     .on("zoom",function() {
         g.attr("transform","translate(" + d3.event.translate.join(",") + ")scale(" + d3.event.scale + ")");
         g.selectAll("path")  
