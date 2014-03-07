@@ -46,6 +46,7 @@ footer {
 #news-slider-nav-ul > li > a {
   text-transform: lowercase;
   background-color:#ccc;
+  min-width:8em;
 }
 
 #news-slider {  
@@ -54,6 +55,7 @@ footer {
 
 .ls-wrapper .ls-nav .current {
   font-weight:bold;
+  background-color:#c5c5c5 !important;
 }
 
 .news-top-left {
