@@ -43,6 +43,11 @@ footer {
   margin-top:-60px;
 }
 
+#tagline {
+  margin-top: 0px;
+}
+
+
 #news-slider-nav-ul > li > a {
   text-transform: lowercase;
   background-color:#ccc;
