@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  var zoomEnabled = false;
+
   var margin = {left: 10, right: 10},
      width = parseInt(d3.select('#meetupmap').style('width')) - margin.left - margin.right,
      height = width *  0.5;
@@ -16,8 +18,15 @@ $(document).ready(function() {
       .attr("width", width + 'px')
       .attr("height", height + 'px');
 
+  svg.append("rect")
+      .attr("class", "mapbackground")
+      .attr("width", width)
+      .attr("height", height)
+      .on("click", clicked);
+
   var g = svg.append("g");
-  
+
+
 
   // load and display the world
   d3.json("./static/world.json", function(error, topology) {
@@ -52,19 +61,25 @@ $(document).ready(function() {
 
   });
 
-    // zoom and pan
-    // var zoom = d3.behavior.zoom()
-    //   .scaleExtent([1, 5])
-    //   .on("zoom",function() {
-    //       g.attr("transform","translate(" + d3.event.translate.join(",") + ")scale(" + d3.event.scale + ")");
-    //       g.selectAll("path")  
-    //         .attr("d", path.projection(projection));
-    //       g.selectAll("circle")
-    //         .attr("r", 5 / d3.event.scale )
-    //         .style("stroke-width", 1 / d3.event.scale);
-    // });
 
-   // svg.call(zoom);
+  var zoom = d3.behavior.zoom()
+    .scaleExtent([1, 5])
+    .on("zoom",function() {
+        if (zoomEnabled) {
+          g.attr("transform","translate(" + d3.event.translate.join(",") + ")scale(" + d3.event.scale + ")");
+          g.selectAll("path")  
+            .attr("d", path.projection(projection));
+          g.selectAll("circle")
+            .attr("r", 5 / d3.event.scale )
+            .style("stroke-width", 1 / d3.event.scale);
+        } else {return false;}
+  });
+
+  function clicked() {
+    zoomEnabled = !zoomEnabled;
+    if (zoomEnabled) svg.call(zoom);
+  }
+
 
   // responsive 
   d3.select(window).on('resize', resize);
