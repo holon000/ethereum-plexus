@@ -2,10 +2,14 @@
   padding-top: 20px;
 }
 
+.mapbackground {
+  fill: #f5f5f5;
+}
+
 path {
-  stroke: white;
+  stroke: black;
   stroke-width: 0.25px;
-  fill: grey;
+  fill: white;
 }
 
 .meetup-tooltip {

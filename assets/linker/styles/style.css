@@ -29,11 +29,13 @@ footer {
 }
 
 
+/*
 #maincontent > div {
   max-width:900px;
   margin:0 auto;
   padding-top:30px;
 }
+*/
 
 .maincontent {
   background-image:url('/images/bg-img.jpg');
@@ -48,13 +50,33 @@ footer {
   margin-top:-60px;
 }
 
+#tagline {
+  margin-top: 0px;
+}
+
+
 #news-slider-nav-ul > li > a {
   text-transform: lowercase;
   background-color:#ccc;
+  min-width:8em;
+}
+
+#news-slider {
+  margin-top: 20px;
 }
 
 .ls-wrapper .ls-nav .current {
   font-weight:bold;
+  background-color:#c5c5c5 !important;
+}
+
+.ls-responsive .ls-nav-left a, .ls-responsive .ls-nav-right a {
+  background-color: transparent;
+  color: #9A9A9A;
+}
+.ls-responsive .ls-nav-right a:hover, .ls-responsive .ls-nav-right a:hover {
+  background-color: transparent;
+  color: #333;
 }
 
 .news-top-left {
@@ -109,6 +131,14 @@ footer {
   width:100%;
   position:relative;
   z-index:100;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:#333;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color:#777;
 }
 
 .navbar {
@@ -197,7 +227,7 @@ footer {
 
 .list-inline > li {
   padding-left:1px;
-  display: inline-block !important; 
+  display: inline-block !important;
   vertical-align: top !important;
 }
 
@@ -212,6 +242,7 @@ footer {
   padding:0;
   top:-60px;
   margin-top:-60px;
+  z-index:-100;
 }
 
 #feature .video-content {
@@ -279,8 +310,8 @@ footer {
 }
 
 .ethereum-logo {
-  font-family:robotoregular;
-  letter-spacing:0.25em;
+  font-family:RobotoLight;
+  letter-spacing:0.35em;
   color:#333;
 }
 
@@ -375,13 +406,15 @@ footer {
 
 .squr {
   width: 0;
-  height: 0; 
+  height: 0;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
-  border-bottom: 35px solid white;
+  border-bottom: 55px solid white;
   margin-left:auto;
   margin-right:auto;
-  margin-top:-15px;
+  margin-top:-6em;
+  margin-bottom:4em;
+  z-index:100;
 }
 
 #content-circle {
@@ -396,11 +429,11 @@ footer {
 }
 
 #code-slider pre {
-   background-color: transparent; 
-   border: none; 
-   border-radius: 0; 
+   background-color: transparent;
+   border: none;
+   border-radius: 0;
  }
- 
+
  #code-slider h4 {
    text-align: right;
  }

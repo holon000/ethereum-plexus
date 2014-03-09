@@ -7,7 +7,6 @@ $(function() {
 		return r.test(navigator.userAgent);
 			
 	}
-
 	// For mobile screens, just show an image called 'poster.jpg'. Mobile
 	// screens don't support autoplaying videos, or for IE.
 	if(screen.width < 800 || iedetect(8) || iedetect(7) || 'ontouchstart' in window) {
@@ -18,12 +17,12 @@ $(function() {
 			$height = $(window).height(); // Height of the screen
 			
 			// Resize image accordingly
-			$('#feature').css({
+			//$('#feature').css({
 				//'background-image' : 'url(../images/poster.jpg)', 
 				//'background-size' : 'cover', 
-				'width' : $width+'px', 
-				'height' : $height+'px'
-			});
+				//'width' : $width+'px', 
+				//'height' : $height+'px'
+			//});
 			
 			// Hide video
 			$('video').hide();
@@ -46,14 +45,14 @@ $(function() {
 			(adjSize = function() { // Create function called adjSize
 							
 				$width = $(window).width(); // Width of the screen
-				$height = $(window).height(); // Height of the screen
+				$height = $(window).height() - 200; // Height of the screen
 							
 				$boxRatio = $width / $height; // The ratio the screen is in
 							
 				$adjRatio = $aspectRatio / $boxRatio; // The ratio of the video divided by the screen size
 							
 				// Set the container to be the width and height of the screen
-				$('#feature').css({'width' : $width+'px', 'height' : $height+'-30px'}); 
+				$('#feature').css({'width' : $width+'px', 'height' : $height+'px'}); 
 							
 				if($boxRatio < $aspectRatio) { // If the screen ratio is less than the aspect ratio..
 					// Set the width of the video to the screen size multiplied by $adjRatio

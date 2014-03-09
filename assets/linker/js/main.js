@@ -83,9 +83,11 @@ $(function() {
   $('#news-slider').liquidSlider({
     autoSlide: false,
     dynamicTabs: true,
+    dynamicTabsHtml: true,
     dynamicArrows: false,
     slideEaseDuration: 600,
     autoHeight: true,
+    includeTitle: false
   });
   $('#who-slider').liquidSlider({
     autoSlide: false,
@@ -96,9 +98,13 @@ $(function() {
   $('#code-slider').liquidSlider({
     autoSlide: false,
     dynamicTabs: false,
-    dynamicArrows: true,
     slideEaseDuration: 600,
     autoHeight: true,
+    dynamicArrows: false,
+    dynamicArrowsGraphical: false,
+    // dynamicArrowLeftText: '<i class="fa fa-angle-left fa-3x" data-liquidslider-ref="#code-slider">',
+    // dynamicArrowRightText: '<i class="fa fa-angle-right fa-3x" data-liquidslider-ref="#code-slider">',
+    crossLinks: true
   });
   $('#philosophy-slider').liquidSlider({
     autoSlide: false,
