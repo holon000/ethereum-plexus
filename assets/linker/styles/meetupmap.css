@@ -1,5 +1,8 @@
 #meetupmap {
-  padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  border: 1px solid lightgrey;
 }
 
 .mapbackground {
