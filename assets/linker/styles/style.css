@@ -29,6 +29,13 @@ footer {
 }
 
 
+/*
+#maincontent > div {
+  max-width:900px;
+  margin:0 auto;
+  padding-top:30px;
+}
+*/
 
 .maincontent {
   background-image:url('/images/bg-img.jpg');
@@ -54,7 +61,7 @@ footer {
   min-width:8em;
 }
 
-#news-slider {  
+#news-slider {
   margin-top: 20px;
 }
 
@@ -213,8 +220,15 @@ footer {
   border-radius: 0;
 }
 
+
+.hr {
+  border-bottom: 1px solid #494949;
+}
+
 .list-inline > li {
   padding-left:1px;
+  display: inline-block !important;
+  vertical-align: top !important;
 }
 
 #profile .person-description {
@@ -392,7 +406,7 @@ footer {
 
 .squr {
   width: 0;
-  height: 0; 
+  height: 0;
   border-left: 45px solid transparent;
   border-right: 45px solid transparent;
   border-bottom: 55px solid white;
@@ -415,11 +429,11 @@ footer {
 }
 
 #code-slider pre {
-   background-color: transparent; 
-   border: none; 
-   border-radius: 0; 
+   background-color: transparent;
+   border: none;
+   border-radius: 0;
  }
- 
+
  #code-slider h4 {
    text-align: right;
  }
@@ -538,6 +552,65 @@ a:hover {
 .philosophy-icon5 {
   padding:8px 11px;
   font-size:193%;
+}
+
+#apps-examples {
+  font-size: 150%;
+}
+
+#apps-examples .hr {
+  padding: 2ex;
+}
+
+#apps-examples img {
+  padding: 0 1ex 0 1ex;
+  vertical-align: text-bottom;
+}
+
+#apps-examples li {
+  background: url(/images/appicon.png) no-repeat;
+  font-size: 50%;
+  width: 60px;
+  height: 80px;
+  margin: 1ex;
+}
+
+#apps-examples ul > li > span {
+  position: relative;
+  top: 60px;
+  display: block;
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+  /*border: 1px solid blue;*/
+}
+#apps-examples .apps {
+  margin-top: -1em;
+}
+
+#apps-examples > h4 {
+  padding: 4em 0 0 0;
+}
+
+.dragapp {
+  margin: 1px solid green;
+  background: url(/images/appicon-drag.png) no-repeat;
+}
+
+.custom-app {
+  background: url(/images/custom-app.png) no-repeat;
+}
+
+.html-css-js {
+  background: url(/images/html-css-js.png) no-repeat;
+}
+
+.huge {
+  font-size: 300%;
+}
+
+.inline-block {
+  display: inline-block
 }
 
 /* Pill style */
